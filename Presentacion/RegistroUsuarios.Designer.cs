@@ -31,39 +31,39 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RegistroUsuarios));
             this.lblTituloMenu = new System.Windows.Forms.Label();
             this.lblNombre = new System.Windows.Forms.Label();
-            this.tbContraseña = new System.Windows.Forms.TextBox();
+            this.tbNombre = new System.Windows.Forms.TextBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.lblApellido = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tbApellido = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.lblDNI = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.tbDNI = new System.Windows.Forms.TextBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.lblTelefono = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.tbTelefono = new System.Windows.Forms.TextBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.lblDireccion = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.tbDireccion = new System.Windows.Forms.TextBox();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.lblEmail = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.tbEmail = new System.Windows.Forms.TextBox();
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.pictureBox12 = new System.Windows.Forms.PictureBox();
             this.lblContraseña = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.tbContrasenia = new System.Windows.Forms.TextBox();
             this.pictureBox13 = new System.Windows.Forms.PictureBox();
             this.pictureBox14 = new System.Windows.Forms.PictureBox();
             this.lblUsuario = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.tbUsuario = new System.Windows.Forms.TextBox();
             this.pictureBox15 = new System.Windows.Forms.PictureBox();
             this.pictureBox16 = new System.Windows.Forms.PictureBox();
             this.lblCategoria = new System.Windows.Forms.Label();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.tbCategoria = new System.Windows.Forms.TextBox();
             this.pictureBox17 = new System.Windows.Forms.PictureBox();
             this.pictureBox18 = new System.Windows.Forms.PictureBox();
             this.btnRegistrarUsuario = new System.Windows.Forms.Button();
@@ -116,14 +116,14 @@
             this.lblNombre.TabIndex = 13;
             this.lblNombre.Text = "Nombre";
             // 
-            // tbContraseña
+            // tbNombre
             // 
-            this.tbContraseña.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tbContraseña.Location = new System.Drawing.Point(163, 222);
-            this.tbContraseña.Name = "tbContraseña";
-            this.tbContraseña.PasswordChar = '*';
-            this.tbContraseña.Size = new System.Drawing.Size(130, 13);
-            this.tbContraseña.TabIndex = 10;
+            this.tbNombre.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbNombre.Location = new System.Drawing.Point(163, 222);
+            this.tbNombre.Name = "tbNombre";
+            this.tbNombre.PasswordChar = '*';
+            this.tbNombre.Size = new System.Drawing.Size(130, 13);
+            this.tbNombre.TabIndex = 10;
             // 
             // pictureBox3
             // 
@@ -161,14 +161,14 @@
             this.lblApellido.TabIndex = 17;
             this.lblApellido.Text = "Apellido";
             // 
-            // textBox1
+            // tbApellido
             // 
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Location = new System.Drawing.Point(495, 222);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.PasswordChar = '*';
-            this.textBox1.Size = new System.Drawing.Size(130, 13);
-            this.textBox1.TabIndex = 14;
+            this.tbApellido.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbApellido.Location = new System.Drawing.Point(495, 222);
+            this.tbApellido.Name = "tbApellido";
+            this.tbApellido.PasswordChar = '*';
+            this.tbApellido.Size = new System.Drawing.Size(130, 13);
+            this.tbApellido.TabIndex = 14;
             // 
             // pictureBox1
             // 
@@ -206,14 +206,14 @@
             this.lblDNI.TabIndex = 21;
             this.lblDNI.Text = "DNI";
             // 
-            // textBox2
+            // tbDNI
             // 
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Location = new System.Drawing.Point(832, 220);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.PasswordChar = '*';
-            this.textBox2.Size = new System.Drawing.Size(130, 13);
-            this.textBox2.TabIndex = 18;
+            this.tbDNI.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbDNI.Location = new System.Drawing.Point(832, 220);
+            this.tbDNI.Name = "tbDNI";
+            this.tbDNI.PasswordChar = '*';
+            this.tbDNI.Size = new System.Drawing.Size(130, 13);
+            this.tbDNI.TabIndex = 18;
             // 
             // pictureBox5
             // 
@@ -251,14 +251,14 @@
             this.lblTelefono.TabIndex = 33;
             this.lblTelefono.Text = "Telefono";
             // 
-            // textBox3
+            // tbTelefono
             // 
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox3.Location = new System.Drawing.Point(832, 343);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.PasswordChar = '*';
-            this.textBox3.Size = new System.Drawing.Size(130, 13);
-            this.textBox3.TabIndex = 30;
+            this.tbTelefono.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbTelefono.Location = new System.Drawing.Point(832, 343);
+            this.tbTelefono.Name = "tbTelefono";
+            this.tbTelefono.PasswordChar = '*';
+            this.tbTelefono.Size = new System.Drawing.Size(130, 13);
+            this.tbTelefono.TabIndex = 30;
             // 
             // pictureBox7
             // 
@@ -296,14 +296,14 @@
             this.lblDireccion.TabIndex = 29;
             this.lblDireccion.Text = "Direccion";
             // 
-            // textBox4
+            // tbDireccion
             // 
-            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox4.Location = new System.Drawing.Point(495, 343);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.PasswordChar = '*';
-            this.textBox4.Size = new System.Drawing.Size(130, 13);
-            this.textBox4.TabIndex = 26;
+            this.tbDireccion.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbDireccion.Location = new System.Drawing.Point(495, 343);
+            this.tbDireccion.Name = "tbDireccion";
+            this.tbDireccion.PasswordChar = '*';
+            this.tbDireccion.Size = new System.Drawing.Size(130, 13);
+            this.tbDireccion.TabIndex = 26;
             // 
             // pictureBox9
             // 
@@ -341,14 +341,14 @@
             this.lblEmail.TabIndex = 25;
             this.lblEmail.Text = "Email";
             // 
-            // textBox5
+            // tbEmail
             // 
-            this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox5.Location = new System.Drawing.Point(163, 343);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.PasswordChar = '*';
-            this.textBox5.Size = new System.Drawing.Size(130, 13);
-            this.textBox5.TabIndex = 22;
+            this.tbEmail.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbEmail.Location = new System.Drawing.Point(163, 343);
+            this.tbEmail.Name = "tbEmail";
+            this.tbEmail.PasswordChar = '*';
+            this.tbEmail.Size = new System.Drawing.Size(130, 13);
+            this.tbEmail.TabIndex = 22;
             // 
             // pictureBox11
             // 
@@ -386,14 +386,14 @@
             this.lblContraseña.TabIndex = 45;
             this.lblContraseña.Text = "Contraseña";
             // 
-            // textBox6
+            // tbContrasenia
             // 
-            this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox6.Location = new System.Drawing.Point(832, 451);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.PasswordChar = '*';
-            this.textBox6.Size = new System.Drawing.Size(130, 13);
-            this.textBox6.TabIndex = 42;
+            this.tbContrasenia.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbContrasenia.Location = new System.Drawing.Point(832, 451);
+            this.tbContrasenia.Name = "tbContrasenia";
+            this.tbContrasenia.PasswordChar = '*';
+            this.tbContrasenia.Size = new System.Drawing.Size(130, 13);
+            this.tbContrasenia.TabIndex = 42;
             // 
             // pictureBox13
             // 
@@ -431,14 +431,14 @@
             this.lblUsuario.TabIndex = 41;
             this.lblUsuario.Text = "Usuario";
             // 
-            // textBox7
+            // tbUsuario
             // 
-            this.textBox7.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox7.Location = new System.Drawing.Point(495, 451);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.PasswordChar = '*';
-            this.textBox7.Size = new System.Drawing.Size(130, 13);
-            this.textBox7.TabIndex = 38;
+            this.tbUsuario.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbUsuario.Location = new System.Drawing.Point(495, 451);
+            this.tbUsuario.Name = "tbUsuario";
+            this.tbUsuario.PasswordChar = '*';
+            this.tbUsuario.Size = new System.Drawing.Size(130, 13);
+            this.tbUsuario.TabIndex = 38;
             // 
             // pictureBox15
             // 
@@ -476,14 +476,14 @@
             this.lblCategoria.TabIndex = 37;
             this.lblCategoria.Text = "Categoria";
             // 
-            // textBox8
+            // tbCategoria
             // 
-            this.textBox8.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox8.Location = new System.Drawing.Point(163, 451);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.PasswordChar = '*';
-            this.textBox8.Size = new System.Drawing.Size(130, 13);
-            this.textBox8.TabIndex = 34;
+            this.tbCategoria.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbCategoria.Location = new System.Drawing.Point(163, 451);
+            this.tbCategoria.Name = "tbCategoria";
+            this.tbCategoria.PasswordChar = '*';
+            this.tbCategoria.Size = new System.Drawing.Size(130, 13);
+            this.tbCategoria.TabIndex = 34;
             // 
             // pictureBox17
             // 
@@ -564,39 +564,39 @@
             this.Controls.Add(this.btnRegistrarUsuario);
             this.Controls.Add(this.pictureBox20);
             this.Controls.Add(this.lblContraseña);
-            this.Controls.Add(this.textBox6);
+            this.Controls.Add(this.tbContrasenia);
             this.Controls.Add(this.pictureBox13);
             this.Controls.Add(this.pictureBox14);
             this.Controls.Add(this.lblUsuario);
-            this.Controls.Add(this.textBox7);
+            this.Controls.Add(this.tbUsuario);
             this.Controls.Add(this.pictureBox15);
             this.Controls.Add(this.pictureBox16);
             this.Controls.Add(this.lblCategoria);
-            this.Controls.Add(this.textBox8);
+            this.Controls.Add(this.tbCategoria);
             this.Controls.Add(this.pictureBox17);
             this.Controls.Add(this.pictureBox18);
             this.Controls.Add(this.lblTelefono);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.tbTelefono);
             this.Controls.Add(this.pictureBox7);
             this.Controls.Add(this.pictureBox8);
             this.Controls.Add(this.lblDireccion);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.tbDireccion);
             this.Controls.Add(this.pictureBox9);
             this.Controls.Add(this.pictureBox10);
             this.Controls.Add(this.lblEmail);
-            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.tbEmail);
             this.Controls.Add(this.pictureBox11);
             this.Controls.Add(this.pictureBox12);
             this.Controls.Add(this.lblDNI);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.tbDNI);
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.lblApellido);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.tbApellido);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.lblNombre);
-            this.Controls.Add(this.tbContraseña);
+            this.Controls.Add(this.tbNombre);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.lblTituloMenu);
@@ -632,39 +632,39 @@
 
         private System.Windows.Forms.Label lblTituloMenu;
         private System.Windows.Forms.Label lblNombre;
-        private System.Windows.Forms.TextBox tbContraseña;
+        private System.Windows.Forms.TextBox tbNombre;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Label lblApellido;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox tbApellido;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label lblDNI;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox tbDNI;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.Label lblTelefono;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox tbTelefono;
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.Label lblDireccion;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox tbDireccion;
         private System.Windows.Forms.PictureBox pictureBox9;
         private System.Windows.Forms.PictureBox pictureBox10;
         private System.Windows.Forms.Label lblEmail;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox tbEmail;
         private System.Windows.Forms.PictureBox pictureBox11;
         private System.Windows.Forms.PictureBox pictureBox12;
         private System.Windows.Forms.Label lblContraseña;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox tbContrasenia;
         private System.Windows.Forms.PictureBox pictureBox13;
         private System.Windows.Forms.PictureBox pictureBox14;
         private System.Windows.Forms.Label lblUsuario;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox tbUsuario;
         private System.Windows.Forms.PictureBox pictureBox15;
         private System.Windows.Forms.PictureBox pictureBox16;
         private System.Windows.Forms.Label lblCategoria;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox tbCategoria;
         private System.Windows.Forms.PictureBox pictureBox17;
         private System.Windows.Forms.PictureBox pictureBox18;
         private System.Windows.Forms.Button btnRegistrarUsuario;

@@ -44,8 +44,11 @@ namespace Presentacion
 
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void btnGestiondeProveedores_Click(object sender, EventArgs e)
         {
+            this.Hide();
+            Form formulario = new GestionProveedores();
+            formulario.Show();
 
         }
 

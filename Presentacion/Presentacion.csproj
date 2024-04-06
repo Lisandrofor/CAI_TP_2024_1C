@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GestionProveedores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestionProveedores.Designer.cs">
+      <DependentUpon>GestionProveedores.cs</DependentUpon>
+    </Compile>
     <Compile Include="GestionUsuarios.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -72,6 +78,10 @@
     <Compile Include="RegistroUsuarios.Designer.cs">
       <DependentUpon>RegistroUsuarios.cs</DependentUpon>
     </Compile>
+    <Compile Include="ValidadorUtils.cs" />
+    <EmbeddedResource Include="GestionProveedores.resx">
+      <DependentUpon>GestionProveedores.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GestionUsuarios.resx">
       <DependentUpon>GestionUsuarios.cs</DependentUpon>
     </EmbeddedResource>
