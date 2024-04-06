@@ -120,7 +120,7 @@
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.lblTituloMenu);
             this.Name = "GestionProveedores";
-            this.Text = "GestionUsuarios";
+            this.Text = "GestionProveedores";
             this.Load += new System.EventHandler(this.GestionProveedores_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
