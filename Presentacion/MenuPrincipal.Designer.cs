@@ -36,7 +36,7 @@
             this.btnCerrarSesion = new System.Windows.Forms.Button();
             this.btnGestiondeProveedores = new System.Windows.Forms.Button();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnGestiondeProductos = new System.Windows.Forms.Button();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.btnSalir = new System.Windows.Forms.Button();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
@@ -129,17 +129,17 @@
             this.pictureBox3.TabStop = false;
             this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
             // 
-            // button3
+            // btnGestiondeProductos
             // 
-            this.button3.BackColor = System.Drawing.Color.White;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(522, 339);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(126, 56);
-            this.button3.TabIndex = 12;
-            this.button3.Text = "Vacio";
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.btnGestiondeProductos.BackColor = System.Drawing.Color.White;
+            this.btnGestiondeProductos.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGestiondeProductos.Location = new System.Drawing.Point(522, 339);
+            this.btnGestiondeProductos.Name = "btnGestiondeProductos";
+            this.btnGestiondeProductos.Size = new System.Drawing.Size(126, 56);
+            this.btnGestiondeProductos.TabIndex = 12;
+            this.btnGestiondeProductos.Text = "Gestion de Productos";
+            this.btnGestiondeProductos.UseVisualStyleBackColor = false;
+            this.btnGestiondeProductos.Click += new System.EventHandler(this.button3_Click);
             // 
             // pictureBox4
             // 
@@ -183,7 +183,7 @@
             this.ClientSize = new System.Drawing.Size(1162, 650);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.pictureBox5);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.btnGestiondeProductos);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.btnGestiondeProveedores);
             this.Controls.Add(this.pictureBox3);
@@ -214,7 +214,7 @@
         private System.Windows.Forms.Button btnCerrarSesion;
         private System.Windows.Forms.Button btnGestiondeProveedores;
         private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnGestiondeProductos;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Button btnSalir;
         private System.Windows.Forms.PictureBox pictureBox5;
