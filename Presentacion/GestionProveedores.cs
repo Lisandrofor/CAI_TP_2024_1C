@@ -44,6 +44,7 @@ namespace Presentacion
             this.Hide();
             Form formulario = new RegistroUsuarios();
             formulario.Show();
+            
         }
     }
 }

@@ -36,14 +36,12 @@
             this.btnCerrarSesion = new System.Windows.Forms.Button();
             this.btnGestiondeProveedores = new System.Windows.Forms.Button();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.btnGestiondeProductos = new System.Windows.Forms.Button();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.btnSalir = new System.Windows.Forms.Button();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.btnGestiondeProductos = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.SuspendLayout();
             // 
@@ -129,29 +127,6 @@
             this.pictureBox3.TabStop = false;
             this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
             // 
-            // btnGestiondeProductos
-            // 
-            this.btnGestiondeProductos.BackColor = System.Drawing.Color.White;
-            this.btnGestiondeProductos.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGestiondeProductos.Location = new System.Drawing.Point(522, 339);
-            this.btnGestiondeProductos.Name = "btnGestiondeProductos";
-            this.btnGestiondeProductos.Size = new System.Drawing.Size(126, 56);
-            this.btnGestiondeProductos.TabIndex = 12;
-            this.btnGestiondeProductos.Text = "Gestion de Productos";
-            this.btnGestiondeProductos.UseVisualStyleBackColor = false;
-            this.btnGestiondeProductos.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.BackColor = System.Drawing.Color.Black;
-            this.pictureBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox4.Location = new System.Drawing.Point(520, 337);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(131, 61);
-            this.pictureBox4.TabIndex = 11;
-            this.pictureBox4.TabStop = false;
-            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
-            // 
             // btnSalir
             // 
             this.btnSalir.BackColor = System.Drawing.Color.White;
@@ -175,6 +150,18 @@
             this.pictureBox5.TabIndex = 13;
             this.pictureBox5.TabStop = false;
             // 
+            // btnGestiondeProductos
+            // 
+            this.btnGestiondeProductos.BackColor = System.Drawing.Color.White;
+            this.btnGestiondeProductos.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGestiondeProductos.Location = new System.Drawing.Point(520, 333);
+            this.btnGestiondeProductos.Name = "btnGestiondeProductos";
+            this.btnGestiondeProductos.Size = new System.Drawing.Size(126, 56);
+            this.btnGestiondeProductos.TabIndex = 12;
+            this.btnGestiondeProductos.Text = "Gestion de Productos";
+            this.btnGestiondeProductos.UseVisualStyleBackColor = false;
+            this.btnGestiondeProductos.Click += new System.EventHandler(this.button3_Click);
+            // 
             // MenuPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -184,7 +171,6 @@
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.btnGestiondeProductos);
-            this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.btnGestiondeProveedores);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.btnCerrarSesion);
@@ -198,7 +184,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -214,9 +199,8 @@
         private System.Windows.Forms.Button btnCerrarSesion;
         private System.Windows.Forms.Button btnGestiondeProveedores;
         private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.Button btnGestiondeProductos;
-        private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Button btnSalir;
         private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.Button btnGestiondeProductos;
     }
 }
