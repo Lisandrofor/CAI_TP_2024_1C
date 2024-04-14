@@ -34,6 +34,8 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.btnVolver = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnBajaUsuarios = new System.Windows.Forms.Button();
+            this.btnLoginUsuariios = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -95,12 +97,37 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
+            // btnBajaUsuarios
+            // 
+            this.btnBajaUsuarios.BackColor = System.Drawing.Color.White;
+            this.btnBajaUsuarios.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBajaUsuarios.Location = new System.Drawing.Point(518, 304);
+            this.btnBajaUsuarios.Name = "btnBajaUsuarios";
+            this.btnBajaUsuarios.Size = new System.Drawing.Size(126, 56);
+            this.btnBajaUsuarios.TabIndex = 15;
+            this.btnBajaUsuarios.Text = "Baja de Usuarios";
+            this.btnBajaUsuarios.UseVisualStyleBackColor = false;
+            // 
+            // btnLoginUsuariios
+            // 
+            this.btnLoginUsuariios.BackColor = System.Drawing.Color.White;
+            this.btnLoginUsuariios.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLoginUsuariios.Location = new System.Drawing.Point(518, 413);
+            this.btnLoginUsuariios.Name = "btnLoginUsuariios";
+            this.btnLoginUsuariios.Size = new System.Drawing.Size(126, 56);
+            this.btnLoginUsuariios.TabIndex = 16;
+            this.btnLoginUsuariios.Text = "Login De Usuario";
+            this.btnLoginUsuariios.UseMnemonic = false;
+            this.btnLoginUsuariios.UseVisualStyleBackColor = false;
+            // 
             // GestionUsuarios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1163, 665);
+            this.Controls.Add(this.btnLoginUsuariios);
+            this.Controls.Add(this.btnBajaUsuarios);
             this.Controls.Add(this.btnVolver);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnRegistrarUsuario);
@@ -123,5 +150,7 @@
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Button btnVolver;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button btnBajaUsuarios;
+        private System.Windows.Forms.Button btnLoginUsuariios;
     }
 }
