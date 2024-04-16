@@ -40,6 +40,10 @@
             this.lblApellidoProveedor = new System.Windows.Forms.Label();
             this.btnVolverProveedor = new System.Windows.Forms.Button();
             this.btnRegistrarProveedor = new System.Windows.Forms.Button();
+            this.tbNombre = new System.Windows.Forms.TextBox();
+            this.tbApellido = new System.Windows.Forms.TextBox();
+            this.tbEmail = new System.Windows.Forms.TextBox();
+            this.tbCUIT = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -178,12 +182,52 @@
             this.btnRegistrarProveedor.UseVisualStyleBackColor = false;
             this.btnRegistrarProveedor.Click += new System.EventHandler(this.btnRegistrarProveedor_Click);
             // 
+            // tbNombre
+            // 
+            this.tbNombre.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbNombre.Location = new System.Drawing.Point(153, 220);
+            this.tbNombre.Name = "tbNombre";
+            this.tbNombre.PasswordChar = '*';
+            this.tbNombre.Size = new System.Drawing.Size(130, 13);
+            this.tbNombre.TabIndex = 52;
+            // 
+            // tbApellido
+            // 
+            this.tbApellido.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbApellido.Location = new System.Drawing.Point(430, 220);
+            this.tbApellido.Name = "tbApellido";
+            this.tbApellido.PasswordChar = '*';
+            this.tbApellido.Size = new System.Drawing.Size(130, 13);
+            this.tbApellido.TabIndex = 53;
+            // 
+            // tbEmail
+            // 
+            this.tbEmail.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbEmail.Location = new System.Drawing.Point(716, 220);
+            this.tbEmail.Name = "tbEmail";
+            this.tbEmail.PasswordChar = '*';
+            this.tbEmail.Size = new System.Drawing.Size(130, 13);
+            this.tbEmail.TabIndex = 54;
+            // 
+            // tbCUIT
+            // 
+            this.tbCUIT.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbCUIT.Location = new System.Drawing.Point(153, 322);
+            this.tbCUIT.Name = "tbCUIT";
+            this.tbCUIT.PasswordChar = '*';
+            this.tbCUIT.Size = new System.Drawing.Size(130, 13);
+            this.tbCUIT.TabIndex = 55;
+            // 
             // RegistroProveedores
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1135, 607);
+            this.Controls.Add(this.tbCUIT);
+            this.Controls.Add(this.tbEmail);
+            this.Controls.Add(this.tbApellido);
+            this.Controls.Add(this.tbNombre);
             this.Controls.Add(this.btnRegistrarProveedor);
             this.Controls.Add(this.btnVolverProveedor);
             this.Controls.Add(this.lblApellidoProveedor);
@@ -218,5 +262,9 @@
         private System.Windows.Forms.Label lblApellidoProveedor;
         private System.Windows.Forms.Button btnVolverProveedor;
         private System.Windows.Forms.Button btnRegistrarProveedor;
+        private System.Windows.Forms.TextBox tbNombre;
+        private System.Windows.Forms.TextBox tbApellido;
+        private System.Windows.Forms.TextBox tbEmail;
+        private System.Windows.Forms.TextBox tbCUIT;
     }
 }
