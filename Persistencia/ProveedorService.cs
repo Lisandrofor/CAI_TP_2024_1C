@@ -11,9 +11,9 @@ using Persistencia.utils;
 
 namespace Persistencia
 {
-    public class ProveedorService
+    public static class ProveedorService
     {
-        public List<Proveedor> getProveedor()
+        public static List<Proveedor> ListarProveedores()
         {
             String path = "/api/Proveedor/TraerProveedores";
             List<Proveedor> proveedores = new List<Proveedor>();
@@ -39,37 +39,30 @@ namespace Persistencia
 
         }
 
-        public void ModificarProveedor(Guid idProveedor, String direccion, String telefono, String email)
+        public static void ModificarProveedor(string id, string idUsuario,String nombre, String apellido, String email, string CUIT)
         {
-            String path = "/api/Proveedor/ModificarProveedor";
-            Dictionary<string, string> map = new Dictionary<string, string>();
-            map.Add("id", idProveedor.ToString());
-            map.Add("direccion", direccion);
-            map.Add("telefono", telefono);
-            map.Add("email", email);
-
-            var jsonRequest = JsonConvert.SerializeObject(map);
-
             try
             {
-                HttpResponseMessage response = WebHelper.Patch(path, jsonRequest);
-                if (response.IsSuccessStatusCode)
-                {
-                    var reader = new StreamReader(response.Content.ReadAsStreamAsync().Result);
-                    string respuesta = reader.ReadToEnd();
-                }
-                else
-                {
-                    Console.WriteLine($"Error: {response.StatusCode} - {response.ReasonPhrase}");
-                }
+                Dictionary<String, String> dict = new Dictionary<String, String>();
+                dict.Add("id", id);
+                dict.Add("idUsuario", idUsuario);
+                dict.Add("nombre", nombre);
+                dict.Add("apellido", apellido);
+                dict.Add("email", email);
+                dict.Add("cuit", CUIT);
+
+                var jsonRequest = JsonConvert.SerializeObject(dict);
+
+                HttpResponseMessage response = WebHelper.Patch("/Proveedor/ModificarProveedor", jsonRequest);
+
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"Exception: {ex.Message}");
+                throw new Exception("Verifique los datos ingresados");
             }
         }
 
-        public void AgregarProveedor(AltaProveedor altaProveedor)
+        public static void AgregarProveedor(AltaProveedor altaProveedor)
         {
             String path = "/api/Proveedor/AgregarProveedor";
 
@@ -96,27 +89,28 @@ namespace Persistencia
             }
         }
 
-        public void BorrarProveedor(Guid idProveedor)
+        public static void BajaProveedor(string id, string idUsuario)
         {
-            String path = "/api/Cliente/BajaProveedor?id=" + idProveedor;
-
             try
             {
-                HttpResponseMessage response = WebHelper.Delete(path);
-                if (response.IsSuccessStatusCode)
-                {
-                    var reader = new StreamReader(response.Content.ReadAsStreamAsync().Result);
-                    string respuesta = reader.ReadToEnd();
-                }
-                else
-                {
-                    Console.WriteLine($"Error: {response.StatusCode} - {response.ReasonPhrase}");
-                }
+                Dictionary<String, String> dict = new Dictionary<String, String>();
+                dict.Add("id", id);
+                dict.Add("idUsuario", idUsuario);
+
+                var jsonRequest = JsonConvert.SerializeObject(dict);
+
+                HttpResponseMessage response = WebHelper.DeleteWithBody("/Proveedor/BajaProveedor", jsonRequest);
+
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"Exception: {ex.Message}");
+                throw new Exception("Verifique los datos ingresados");
             }
+        }
+
+        public static void AgregarProveedor(ProveedoresWS nuevoProveedorWS)
+        {
+            throw new NotImplementedException();
         }
     }
 }

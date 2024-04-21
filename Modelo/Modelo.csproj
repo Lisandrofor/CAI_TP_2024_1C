@@ -42,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AltaProveedor.cs" />
+    <Compile Include="ProveedoresWS.cs" />
     <Compile Include="Persona.cs" />
     <Compile Include="Proveedor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
