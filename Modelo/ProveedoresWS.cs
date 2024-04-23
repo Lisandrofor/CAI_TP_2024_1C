@@ -14,6 +14,7 @@ namespace Modelo
         public string email { get; set; }
         public string cuit { get; set; }
 
+        //constructor vacio
         public ProveedoresWS()
         {
 
