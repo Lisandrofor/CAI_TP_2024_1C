@@ -38,5 +38,12 @@ namespace Presentacion
             Form formulario = new MenuPrincipal();
             formulario.Show();
         }
+
+        private void btnRegistrarse_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form formulario = new RegistroUsuarios();
+            formulario.Show();
+        }
     }
 }

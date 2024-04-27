@@ -70,6 +70,10 @@
             this.pictureBox20 = new System.Windows.Forms.PictureBox();
             this.btnVolver = new System.Windows.Forms.Button();
             this.pictureBox19 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.tbFechaDeNacimiento = new System.Windows.Forms.TextBox();
+            this.pictureBox21 = new System.Windows.Forms.PictureBox();
+            this.pictureBox22 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -90,6 +94,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).BeginInit();
             this.SuspendLayout();
             // 
             // lblTituloMenu
@@ -110,7 +116,7 @@
             this.lblNombre.BackColor = System.Drawing.Color.MediumSlateBlue;
             this.lblNombre.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNombre.ForeColor = System.Drawing.Color.White;
-            this.lblNombre.Location = new System.Drawing.Point(200, 198);
+            this.lblNombre.Location = new System.Drawing.Point(204, 138);
             this.lblNombre.Name = "lblNombre";
             this.lblNombre.Size = new System.Drawing.Size(56, 21);
             this.lblNombre.TabIndex = 13;
@@ -119,9 +125,8 @@
             // tbNombre
             // 
             this.tbNombre.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tbNombre.Location = new System.Drawing.Point(163, 222);
+            this.tbNombre.Location = new System.Drawing.Point(167, 162);
             this.tbNombre.Name = "tbNombre";
-            this.tbNombre.PasswordChar = '*';
             this.tbNombre.Size = new System.Drawing.Size(130, 13);
             this.tbNombre.TabIndex = 10;
             // 
@@ -131,7 +136,7 @@
             this.pictureBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox3.ErrorImage = null;
             this.pictureBox3.InitialImage = null;
-            this.pictureBox3.Location = new System.Drawing.Point(143, 208);
+            this.pictureBox3.Location = new System.Drawing.Point(147, 148);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(170, 40);
             this.pictureBox3.TabIndex = 12;
@@ -143,7 +148,7 @@
             this.pictureBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox4.ErrorImage = null;
             this.pictureBox4.InitialImage = null;
-            this.pictureBox4.Location = new System.Drawing.Point(141, 206);
+            this.pictureBox4.Location = new System.Drawing.Point(145, 146);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(175, 45);
             this.pictureBox4.TabIndex = 11;
@@ -155,7 +160,7 @@
             this.lblApellido.BackColor = System.Drawing.Color.MediumSlateBlue;
             this.lblApellido.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblApellido.ForeColor = System.Drawing.Color.White;
-            this.lblApellido.Location = new System.Drawing.Point(530, 198);
+            this.lblApellido.Location = new System.Drawing.Point(534, 138);
             this.lblApellido.Name = "lblApellido";
             this.lblApellido.Size = new System.Drawing.Size(60, 21);
             this.lblApellido.TabIndex = 17;
@@ -164,9 +169,8 @@
             // tbApellido
             // 
             this.tbApellido.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tbApellido.Location = new System.Drawing.Point(495, 222);
+            this.tbApellido.Location = new System.Drawing.Point(499, 162);
             this.tbApellido.Name = "tbApellido";
-            this.tbApellido.PasswordChar = '*';
             this.tbApellido.Size = new System.Drawing.Size(130, 13);
             this.tbApellido.TabIndex = 14;
             // 
@@ -176,7 +180,7 @@
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox1.ErrorImage = null;
             this.pictureBox1.InitialImage = null;
-            this.pictureBox1.Location = new System.Drawing.Point(475, 208);
+            this.pictureBox1.Location = new System.Drawing.Point(479, 148);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(170, 40);
             this.pictureBox1.TabIndex = 16;
@@ -188,7 +192,7 @@
             this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox2.ErrorImage = null;
             this.pictureBox2.InitialImage = null;
-            this.pictureBox2.Location = new System.Drawing.Point(473, 206);
+            this.pictureBox2.Location = new System.Drawing.Point(477, 146);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(175, 45);
             this.pictureBox2.TabIndex = 15;
@@ -200,7 +204,7 @@
             this.lblDNI.BackColor = System.Drawing.Color.MediumSlateBlue;
             this.lblDNI.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDNI.ForeColor = System.Drawing.Color.White;
-            this.lblDNI.Location = new System.Drawing.Point(881, 196);
+            this.lblDNI.Location = new System.Drawing.Point(885, 136);
             this.lblDNI.Name = "lblDNI";
             this.lblDNI.Size = new System.Drawing.Size(32, 21);
             this.lblDNI.TabIndex = 21;
@@ -209,9 +213,8 @@
             // tbDNI
             // 
             this.tbDNI.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tbDNI.Location = new System.Drawing.Point(832, 220);
+            this.tbDNI.Location = new System.Drawing.Point(836, 160);
             this.tbDNI.Name = "tbDNI";
-            this.tbDNI.PasswordChar = '*';
             this.tbDNI.Size = new System.Drawing.Size(130, 13);
             this.tbDNI.TabIndex = 18;
             // 
@@ -221,7 +224,7 @@
             this.pictureBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox5.ErrorImage = null;
             this.pictureBox5.InitialImage = null;
-            this.pictureBox5.Location = new System.Drawing.Point(812, 206);
+            this.pictureBox5.Location = new System.Drawing.Point(816, 146);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(170, 40);
             this.pictureBox5.TabIndex = 20;
@@ -233,7 +236,7 @@
             this.pictureBox6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox6.ErrorImage = null;
             this.pictureBox6.InitialImage = null;
-            this.pictureBox6.Location = new System.Drawing.Point(810, 204);
+            this.pictureBox6.Location = new System.Drawing.Point(814, 144);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(175, 45);
             this.pictureBox6.TabIndex = 19;
@@ -245,7 +248,7 @@
             this.lblTelefono.BackColor = System.Drawing.Color.MediumSlateBlue;
             this.lblTelefono.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTelefono.ForeColor = System.Drawing.Color.White;
-            this.lblTelefono.Location = new System.Drawing.Point(868, 312);
+            this.lblTelefono.Location = new System.Drawing.Point(872, 252);
             this.lblTelefono.Name = "lblTelefono";
             this.lblTelefono.Size = new System.Drawing.Size(59, 21);
             this.lblTelefono.TabIndex = 33;
@@ -254,9 +257,8 @@
             // tbTelefono
             // 
             this.tbTelefono.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tbTelefono.Location = new System.Drawing.Point(832, 343);
+            this.tbTelefono.Location = new System.Drawing.Point(836, 283);
             this.tbTelefono.Name = "tbTelefono";
-            this.tbTelefono.PasswordChar = '*';
             this.tbTelefono.Size = new System.Drawing.Size(130, 13);
             this.tbTelefono.TabIndex = 30;
             // 
@@ -266,7 +268,7 @@
             this.pictureBox7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox7.ErrorImage = null;
             this.pictureBox7.InitialImage = null;
-            this.pictureBox7.Location = new System.Drawing.Point(812, 329);
+            this.pictureBox7.Location = new System.Drawing.Point(816, 269);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(170, 40);
             this.pictureBox7.TabIndex = 32;
@@ -278,7 +280,7 @@
             this.pictureBox8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox8.ErrorImage = null;
             this.pictureBox8.InitialImage = null;
-            this.pictureBox8.Location = new System.Drawing.Point(810, 327);
+            this.pictureBox8.Location = new System.Drawing.Point(814, 267);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(175, 45);
             this.pictureBox8.TabIndex = 31;
@@ -290,7 +292,7 @@
             this.lblDireccion.BackColor = System.Drawing.Color.MediumSlateBlue;
             this.lblDireccion.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDireccion.ForeColor = System.Drawing.Color.White;
-            this.lblDireccion.Location = new System.Drawing.Point(527, 319);
+            this.lblDireccion.Location = new System.Drawing.Point(531, 259);
             this.lblDireccion.Name = "lblDireccion";
             this.lblDireccion.Size = new System.Drawing.Size(66, 21);
             this.lblDireccion.TabIndex = 29;
@@ -299,9 +301,8 @@
             // tbDireccion
             // 
             this.tbDireccion.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tbDireccion.Location = new System.Drawing.Point(495, 343);
+            this.tbDireccion.Location = new System.Drawing.Point(499, 283);
             this.tbDireccion.Name = "tbDireccion";
-            this.tbDireccion.PasswordChar = '*';
             this.tbDireccion.Size = new System.Drawing.Size(130, 13);
             this.tbDireccion.TabIndex = 26;
             // 
@@ -311,7 +312,7 @@
             this.pictureBox9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox9.ErrorImage = null;
             this.pictureBox9.InitialImage = null;
-            this.pictureBox9.Location = new System.Drawing.Point(475, 329);
+            this.pictureBox9.Location = new System.Drawing.Point(479, 269);
             this.pictureBox9.Name = "pictureBox9";
             this.pictureBox9.Size = new System.Drawing.Size(170, 40);
             this.pictureBox9.TabIndex = 28;
@@ -323,7 +324,7 @@
             this.pictureBox10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox10.ErrorImage = null;
             this.pictureBox10.InitialImage = null;
-            this.pictureBox10.Location = new System.Drawing.Point(473, 327);
+            this.pictureBox10.Location = new System.Drawing.Point(477, 267);
             this.pictureBox10.Name = "pictureBox10";
             this.pictureBox10.Size = new System.Drawing.Size(175, 45);
             this.pictureBox10.TabIndex = 27;
@@ -335,7 +336,7 @@
             this.lblEmail.BackColor = System.Drawing.Color.MediumSlateBlue;
             this.lblEmail.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEmail.ForeColor = System.Drawing.Color.White;
-            this.lblEmail.Location = new System.Drawing.Point(207, 319);
+            this.lblEmail.Location = new System.Drawing.Point(211, 259);
             this.lblEmail.Name = "lblEmail";
             this.lblEmail.Size = new System.Drawing.Size(43, 21);
             this.lblEmail.TabIndex = 25;
@@ -344,9 +345,8 @@
             // tbEmail
             // 
             this.tbEmail.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tbEmail.Location = new System.Drawing.Point(163, 343);
+            this.tbEmail.Location = new System.Drawing.Point(167, 283);
             this.tbEmail.Name = "tbEmail";
-            this.tbEmail.PasswordChar = '*';
             this.tbEmail.Size = new System.Drawing.Size(130, 13);
             this.tbEmail.TabIndex = 22;
             // 
@@ -356,7 +356,7 @@
             this.pictureBox11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox11.ErrorImage = null;
             this.pictureBox11.InitialImage = null;
-            this.pictureBox11.Location = new System.Drawing.Point(143, 329);
+            this.pictureBox11.Location = new System.Drawing.Point(147, 269);
             this.pictureBox11.Name = "pictureBox11";
             this.pictureBox11.Size = new System.Drawing.Size(170, 40);
             this.pictureBox11.TabIndex = 24;
@@ -368,7 +368,7 @@
             this.pictureBox12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox12.ErrorImage = null;
             this.pictureBox12.InitialImage = null;
-            this.pictureBox12.Location = new System.Drawing.Point(141, 327);
+            this.pictureBox12.Location = new System.Drawing.Point(145, 267);
             this.pictureBox12.Name = "pictureBox12";
             this.pictureBox12.Size = new System.Drawing.Size(175, 45);
             this.pictureBox12.TabIndex = 23;
@@ -380,7 +380,7 @@
             this.lblContraseña.BackColor = System.Drawing.Color.MediumSlateBlue;
             this.lblContraseña.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblContraseña.ForeColor = System.Drawing.Color.White;
-            this.lblContraseña.Location = new System.Drawing.Point(860, 427);
+            this.lblContraseña.Location = new System.Drawing.Point(864, 367);
             this.lblContraseña.Name = "lblContraseña";
             this.lblContraseña.Size = new System.Drawing.Size(74, 21);
             this.lblContraseña.TabIndex = 45;
@@ -389,7 +389,7 @@
             // tbContrasenia
             // 
             this.tbContrasenia.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tbContrasenia.Location = new System.Drawing.Point(832, 451);
+            this.tbContrasenia.Location = new System.Drawing.Point(836, 391);
             this.tbContrasenia.Name = "tbContrasenia";
             this.tbContrasenia.PasswordChar = '*';
             this.tbContrasenia.Size = new System.Drawing.Size(130, 13);
@@ -401,7 +401,7 @@
             this.pictureBox13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox13.ErrorImage = null;
             this.pictureBox13.InitialImage = null;
-            this.pictureBox13.Location = new System.Drawing.Point(812, 437);
+            this.pictureBox13.Location = new System.Drawing.Point(816, 377);
             this.pictureBox13.Name = "pictureBox13";
             this.pictureBox13.Size = new System.Drawing.Size(170, 40);
             this.pictureBox13.TabIndex = 44;
@@ -413,7 +413,7 @@
             this.pictureBox14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox14.ErrorImage = null;
             this.pictureBox14.InitialImage = null;
-            this.pictureBox14.Location = new System.Drawing.Point(810, 435);
+            this.pictureBox14.Location = new System.Drawing.Point(814, 375);
             this.pictureBox14.Name = "pictureBox14";
             this.pictureBox14.Size = new System.Drawing.Size(175, 45);
             this.pictureBox14.TabIndex = 43;
@@ -425,7 +425,7 @@
             this.lblUsuario.BackColor = System.Drawing.Color.MediumSlateBlue;
             this.lblUsuario.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUsuario.ForeColor = System.Drawing.Color.White;
-            this.lblUsuario.Location = new System.Drawing.Point(533, 427);
+            this.lblUsuario.Location = new System.Drawing.Point(537, 367);
             this.lblUsuario.Name = "lblUsuario";
             this.lblUsuario.Size = new System.Drawing.Size(54, 21);
             this.lblUsuario.TabIndex = 41;
@@ -434,9 +434,8 @@
             // tbUsuario
             // 
             this.tbUsuario.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tbUsuario.Location = new System.Drawing.Point(495, 451);
+            this.tbUsuario.Location = new System.Drawing.Point(499, 391);
             this.tbUsuario.Name = "tbUsuario";
-            this.tbUsuario.PasswordChar = '*';
             this.tbUsuario.Size = new System.Drawing.Size(130, 13);
             this.tbUsuario.TabIndex = 38;
             // 
@@ -446,7 +445,7 @@
             this.pictureBox15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox15.ErrorImage = null;
             this.pictureBox15.InitialImage = null;
-            this.pictureBox15.Location = new System.Drawing.Point(475, 437);
+            this.pictureBox15.Location = new System.Drawing.Point(479, 377);
             this.pictureBox15.Name = "pictureBox15";
             this.pictureBox15.Size = new System.Drawing.Size(170, 40);
             this.pictureBox15.TabIndex = 40;
@@ -458,7 +457,7 @@
             this.pictureBox16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox16.ErrorImage = null;
             this.pictureBox16.InitialImage = null;
-            this.pictureBox16.Location = new System.Drawing.Point(473, 435);
+            this.pictureBox16.Location = new System.Drawing.Point(477, 375);
             this.pictureBox16.Name = "pictureBox16";
             this.pictureBox16.Size = new System.Drawing.Size(175, 45);
             this.pictureBox16.TabIndex = 39;
@@ -470,7 +469,7 @@
             this.lblCategoria.BackColor = System.Drawing.Color.MediumSlateBlue;
             this.lblCategoria.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCategoria.ForeColor = System.Drawing.Color.White;
-            this.lblCategoria.Location = new System.Drawing.Point(196, 427);
+            this.lblCategoria.Location = new System.Drawing.Point(200, 367);
             this.lblCategoria.Name = "lblCategoria";
             this.lblCategoria.Size = new System.Drawing.Size(65, 21);
             this.lblCategoria.TabIndex = 37;
@@ -479,9 +478,8 @@
             // tbCategoria
             // 
             this.tbCategoria.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tbCategoria.Location = new System.Drawing.Point(163, 451);
+            this.tbCategoria.Location = new System.Drawing.Point(167, 391);
             this.tbCategoria.Name = "tbCategoria";
-            this.tbCategoria.PasswordChar = '*';
             this.tbCategoria.Size = new System.Drawing.Size(130, 13);
             this.tbCategoria.TabIndex = 34;
             // 
@@ -491,7 +489,7 @@
             this.pictureBox17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox17.ErrorImage = null;
             this.pictureBox17.InitialImage = null;
-            this.pictureBox17.Location = new System.Drawing.Point(143, 437);
+            this.pictureBox17.Location = new System.Drawing.Point(147, 377);
             this.pictureBox17.Name = "pictureBox17";
             this.pictureBox17.Size = new System.Drawing.Size(170, 40);
             this.pictureBox17.TabIndex = 36;
@@ -503,7 +501,7 @@
             this.pictureBox18.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox18.ErrorImage = null;
             this.pictureBox18.InitialImage = null;
-            this.pictureBox18.Location = new System.Drawing.Point(141, 435);
+            this.pictureBox18.Location = new System.Drawing.Point(145, 375);
             this.pictureBox18.Name = "pictureBox18";
             this.pictureBox18.Size = new System.Drawing.Size(175, 45);
             this.pictureBox18.TabIndex = 35;
@@ -553,12 +551,61 @@
             this.pictureBox19.TabIndex = 48;
             this.pictureBox19.TabStop = false;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.label1.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(164, 459);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(133, 21);
+            this.label1.TabIndex = 53;
+            this.label1.Text = "Fecha de Nacimiento";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // tbFechaDeNacimiento
+            // 
+            this.tbFechaDeNacimiento.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbFechaDeNacimiento.Location = new System.Drawing.Point(167, 483);
+            this.tbFechaDeNacimiento.Name = "tbFechaDeNacimiento";
+            this.tbFechaDeNacimiento.Size = new System.Drawing.Size(130, 13);
+            this.tbFechaDeNacimiento.TabIndex = 50;
+            // 
+            // pictureBox21
+            // 
+            this.pictureBox21.BackColor = System.Drawing.Color.White;
+            this.pictureBox21.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox21.ErrorImage = null;
+            this.pictureBox21.InitialImage = null;
+            this.pictureBox21.Location = new System.Drawing.Point(147, 469);
+            this.pictureBox21.Name = "pictureBox21";
+            this.pictureBox21.Size = new System.Drawing.Size(170, 40);
+            this.pictureBox21.TabIndex = 52;
+            this.pictureBox21.TabStop = false;
+            // 
+            // pictureBox22
+            // 
+            this.pictureBox22.BackColor = System.Drawing.Color.Black;
+            this.pictureBox22.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox22.ErrorImage = null;
+            this.pictureBox22.InitialImage = null;
+            this.pictureBox22.Location = new System.Drawing.Point(145, 467);
+            this.pictureBox22.Name = "pictureBox22";
+            this.pictureBox22.Size = new System.Drawing.Size(175, 45);
+            this.pictureBox22.TabIndex = 51;
+            this.pictureBox22.TabStop = false;
+            // 
             // RegistroUsuarios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1156, 651);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.tbFechaDeNacimiento);
+            this.Controls.Add(this.pictureBox21);
+            this.Controls.Add(this.pictureBox22);
             this.Controls.Add(this.btnVolver);
             this.Controls.Add(this.pictureBox19);
             this.Controls.Add(this.btnRegistrarUsuario);
@@ -623,6 +670,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -671,5 +720,9 @@
         private System.Windows.Forms.PictureBox pictureBox20;
         private System.Windows.Forms.Button btnVolver;
         private System.Windows.Forms.PictureBox pictureBox19;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox tbFechaDeNacimiento;
+        private System.Windows.Forms.PictureBox pictureBox21;
+        private System.Windows.Forms.PictureBox pictureBox22;
     }
 }
