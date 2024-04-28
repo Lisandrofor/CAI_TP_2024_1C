@@ -30,7 +30,7 @@ namespace Presentacion
         private void button1_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Form formulario = new MenuPrincipal();
+            Form formulario = new MenuPrincipalAdministrador();
             formulario.Show();
         }
 
@@ -43,6 +43,25 @@ namespace Presentacion
         {
             this.Hide();
             Form formulario = new RegistroUsuarios();
+            formulario.Show();
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnRegistroUsuarios_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form formulario = new ModificacionUsuario();
+            formulario.Show();
+        }
+
+        private void btnBajaUsuario_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form formulario = new BajaUsuario();
             formulario.Show();
         }
     }

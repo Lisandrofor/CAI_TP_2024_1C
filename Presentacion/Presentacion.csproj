@@ -46,6 +46,114 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Devolucion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Devolucion.Designer.cs">
+      <DependentUpon>Devolucion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BajaUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BajaUsuario.Designer.cs">
+      <DependentUpon>BajaUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BajaProveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BajaProveedor.Designer.cs">
+      <DependentUpon>BajaProveedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BajaProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BajaProducto.Designer.cs">
+      <DependentUpon>BajaProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReporteProductoMasVendidoPorCategoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReporteProductoMasVendidoPorCategoria.Designer.cs">
+      <DependentUpon>ReporteProductoMasVendidoPorCategoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReporteVentasPorVendedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReporteVentasPorVendedor.Designer.cs">
+      <DependentUpon>ReporteVentasPorVendedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReporteStockCritico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReporteStockCritico.Designer.cs">
+      <DependentUpon>ReporteStockCritico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModificacionProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModificacionProducto.Designer.cs">
+      <DependentUpon>ModificacionProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModificacionProveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModificacionProveedor.Designer.cs">
+      <DependentUpon>ModificacionProveedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegistroProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistroProducto.Designer.cs">
+      <DependentUpon>RegistroProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegistroProveedores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistroProveedores.Designer.cs">
+      <DependentUpon>RegistroProveedores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModificacionUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModificacionUsuario.Designer.cs">
+      <DependentUpon>ModificacionUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Venta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Venta.Designer.cs">
+      <DependentUpon>Venta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportesVendedores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportesVendedores.Designer.cs">
+      <DependentUpon>ReportesVendedores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportesAdm-Sup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportesAdm-Sup.Designer.cs">
+      <DependentUpon>ReportesAdm-Sup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GestionProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestionProductos.Designer.cs">
+      <DependentUpon>GestionProductos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuPrincipalVendedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuPrincipalVendedor.Designer.cs">
+      <DependentUpon>MenuPrincipalVendedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuPrincipalSupervisor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuPrincipalSupervisor.Designer.cs">
+      <DependentUpon>MenuPrincipalSupervisor.cs</DependentUpon>
+    </Compile>
     <Compile Include="GestionProveedores.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -64,11 +172,11 @@
     <Compile Include="Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
-    <Compile Include="MenuPrincipal.cs">
+    <Compile Include="MenuPrincipalAdministrador.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MenuPrincipal.Designer.cs">
-      <DependentUpon>MenuPrincipal.cs</DependentUpon>
+    <Compile Include="MenuPrincipalAdministrador.Designer.cs">
+      <DependentUpon>MenuPrincipalAdministrador.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -79,6 +187,21 @@
       <DependentUpon>RegistroUsuarios.cs</DependentUpon>
     </Compile>
     <Compile Include="ValidadorUtils.cs" />
+    <EmbeddedResource Include="BajaProducto.resx">
+      <DependentUpon>BajaProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BajaProveedor.resx">
+      <DependentUpon>BajaProveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BajaUsuario.resx">
+      <DependentUpon>BajaUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Devolucion.resx">
+      <DependentUpon>Devolucion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionProductos.resx">
+      <DependentUpon>GestionProductos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GestionProveedores.resx">
       <DependentUpon>GestionProveedores.cs</DependentUpon>
     </EmbeddedResource>
@@ -88,8 +211,23 @@
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MenuPrincipal.resx">
-      <DependentUpon>MenuPrincipal.cs</DependentUpon>
+    <EmbeddedResource Include="MenuPrincipalSupervisor.resx">
+      <DependentUpon>MenuPrincipalSupervisor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuPrincipalAdministrador.resx">
+      <DependentUpon>MenuPrincipalAdministrador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuPrincipalVendedor.resx">
+      <DependentUpon>MenuPrincipalVendedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModificacionProducto.resx">
+      <DependentUpon>ModificacionProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModificacionProveedor.resx">
+      <DependentUpon>ModificacionProveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModificacionUsuario.resx">
+      <DependentUpon>ModificacionUsuario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -100,8 +238,32 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="RegistroProducto.resx">
+      <DependentUpon>RegistroProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegistroProveedores.resx">
+      <DependentUpon>RegistroProveedores.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="RegistroUsuarios.resx">
       <DependentUpon>RegistroUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReporteProductoMasVendidoPorCategoria.resx">
+      <DependentUpon>ReporteProductoMasVendidoPorCategoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportesAdm-Sup.resx">
+      <DependentUpon>ReportesAdm-Sup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReporteStockCritico.resx">
+      <DependentUpon>ReporteStockCritico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportesVendedores.resx">
+      <DependentUpon>ReportesVendedores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReporteVentasPorVendedor.resx">
+      <DependentUpon>ReporteVentasPorVendedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Venta.resx">
+      <DependentUpon>Venta.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
