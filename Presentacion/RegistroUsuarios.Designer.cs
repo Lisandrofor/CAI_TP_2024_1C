@@ -115,6 +115,7 @@
             this.lblNombre.Size = new System.Drawing.Size(56, 21);
             this.lblNombre.TabIndex = 13;
             this.lblNombre.Text = "Nombre";
+            this.lblNombre.Click += new System.EventHandler(this.lblNombre_Click);
             // 
             // tbNombre
             // 
@@ -124,6 +125,7 @@
             this.tbNombre.PasswordChar = '*';
             this.tbNombre.Size = new System.Drawing.Size(130, 13);
             this.tbNombre.TabIndex = 10;
+            this.tbNombre.TextChanged += new System.EventHandler(this.tbNombre_TextChanged);
             // 
             // pictureBox3
             // 
@@ -136,6 +138,7 @@
             this.pictureBox3.Size = new System.Drawing.Size(170, 40);
             this.pictureBox3.TabIndex = 12;
             this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
             // 
             // pictureBox4
             // 
@@ -148,6 +151,7 @@
             this.pictureBox4.Size = new System.Drawing.Size(175, 45);
             this.pictureBox4.TabIndex = 11;
             this.pictureBox4.TabStop = false;
+            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
             // 
             // lblApellido
             // 
@@ -160,6 +164,7 @@
             this.lblApellido.Size = new System.Drawing.Size(60, 21);
             this.lblApellido.TabIndex = 17;
             this.lblApellido.Text = "Apellido";
+            this.lblApellido.Click += new System.EventHandler(this.lblApellido_Click);
             // 
             // tbApellido
             // 
@@ -169,6 +174,7 @@
             this.tbApellido.PasswordChar = '*';
             this.tbApellido.Size = new System.Drawing.Size(130, 13);
             this.tbApellido.TabIndex = 14;
+            this.tbApellido.TextChanged += new System.EventHandler(this.tbApellido_TextChanged);
             // 
             // pictureBox1
             // 
@@ -181,6 +187,7 @@
             this.pictureBox1.Size = new System.Drawing.Size(170, 40);
             this.pictureBox1.TabIndex = 16;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // pictureBox2
             // 
@@ -193,6 +200,7 @@
             this.pictureBox2.Size = new System.Drawing.Size(175, 45);
             this.pictureBox2.TabIndex = 15;
             this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // lblDNI
             // 
@@ -205,6 +213,7 @@
             this.lblDNI.Size = new System.Drawing.Size(32, 21);
             this.lblDNI.TabIndex = 21;
             this.lblDNI.Text = "DNI";
+            this.lblDNI.Click += new System.EventHandler(this.lblDNI_Click);
             // 
             // tbDNI
             // 
@@ -214,6 +223,7 @@
             this.tbDNI.PasswordChar = '*';
             this.tbDNI.Size = new System.Drawing.Size(130, 13);
             this.tbDNI.TabIndex = 18;
+            this.tbDNI.TextChanged += new System.EventHandler(this.tbDNI_TextChanged);
             // 
             // pictureBox5
             // 
@@ -226,6 +236,7 @@
             this.pictureBox5.Size = new System.Drawing.Size(170, 40);
             this.pictureBox5.TabIndex = 20;
             this.pictureBox5.TabStop = false;
+            this.pictureBox5.Click += new System.EventHandler(this.pictureBox5_Click);
             // 
             // pictureBox6
             // 
@@ -238,6 +249,7 @@
             this.pictureBox6.Size = new System.Drawing.Size(175, 45);
             this.pictureBox6.TabIndex = 19;
             this.pictureBox6.TabStop = false;
+            this.pictureBox6.Click += new System.EventHandler(this.pictureBox6_Click);
             // 
             // lblTelefono
             // 
@@ -250,6 +262,7 @@
             this.lblTelefono.Size = new System.Drawing.Size(59, 21);
             this.lblTelefono.TabIndex = 33;
             this.lblTelefono.Text = "Telefono";
+            this.lblTelefono.Click += new System.EventHandler(this.lblTelefono_Click);
             // 
             // tbTelefono
             // 
@@ -259,6 +272,7 @@
             this.tbTelefono.PasswordChar = '*';
             this.tbTelefono.Size = new System.Drawing.Size(130, 13);
             this.tbTelefono.TabIndex = 30;
+            this.tbTelefono.TextChanged += new System.EventHandler(this.tbTelefono_TextChanged);
             // 
             // pictureBox7
             // 
@@ -271,6 +285,7 @@
             this.pictureBox7.Size = new System.Drawing.Size(170, 40);
             this.pictureBox7.TabIndex = 32;
             this.pictureBox7.TabStop = false;
+            this.pictureBox7.Click += new System.EventHandler(this.pictureBox7_Click);
             // 
             // pictureBox8
             // 
@@ -283,6 +298,7 @@
             this.pictureBox8.Size = new System.Drawing.Size(175, 45);
             this.pictureBox8.TabIndex = 31;
             this.pictureBox8.TabStop = false;
+            this.pictureBox8.Click += new System.EventHandler(this.pictureBox8_Click);
             // 
             // lblDireccion
             // 
@@ -295,6 +311,7 @@
             this.lblDireccion.Size = new System.Drawing.Size(66, 21);
             this.lblDireccion.TabIndex = 29;
             this.lblDireccion.Text = "Direccion";
+            this.lblDireccion.Click += new System.EventHandler(this.lblDireccion_Click);
             // 
             // tbDireccion
             // 
@@ -304,6 +321,7 @@
             this.tbDireccion.PasswordChar = '*';
             this.tbDireccion.Size = new System.Drawing.Size(130, 13);
             this.tbDireccion.TabIndex = 26;
+            this.tbDireccion.TextChanged += new System.EventHandler(this.tbDireccion_TextChanged);
             // 
             // pictureBox9
             // 
@@ -316,6 +334,7 @@
             this.pictureBox9.Size = new System.Drawing.Size(170, 40);
             this.pictureBox9.TabIndex = 28;
             this.pictureBox9.TabStop = false;
+            this.pictureBox9.Click += new System.EventHandler(this.pictureBox9_Click);
             // 
             // pictureBox10
             // 
@@ -328,6 +347,7 @@
             this.pictureBox10.Size = new System.Drawing.Size(175, 45);
             this.pictureBox10.TabIndex = 27;
             this.pictureBox10.TabStop = false;
+            this.pictureBox10.Click += new System.EventHandler(this.pictureBox10_Click);
             // 
             // lblEmail
             // 
@@ -340,6 +360,7 @@
             this.lblEmail.Size = new System.Drawing.Size(43, 21);
             this.lblEmail.TabIndex = 25;
             this.lblEmail.Text = "Email";
+            this.lblEmail.Click += new System.EventHandler(this.lblEmail_Click);
             // 
             // tbEmail
             // 
@@ -349,6 +370,7 @@
             this.tbEmail.PasswordChar = '*';
             this.tbEmail.Size = new System.Drawing.Size(130, 13);
             this.tbEmail.TabIndex = 22;
+            this.tbEmail.TextChanged += new System.EventHandler(this.tbEmail_TextChanged);
             // 
             // pictureBox11
             // 
@@ -361,6 +383,7 @@
             this.pictureBox11.Size = new System.Drawing.Size(170, 40);
             this.pictureBox11.TabIndex = 24;
             this.pictureBox11.TabStop = false;
+            this.pictureBox11.Click += new System.EventHandler(this.pictureBox11_Click);
             // 
             // pictureBox12
             // 
@@ -373,6 +396,7 @@
             this.pictureBox12.Size = new System.Drawing.Size(175, 45);
             this.pictureBox12.TabIndex = 23;
             this.pictureBox12.TabStop = false;
+            this.pictureBox12.Click += new System.EventHandler(this.pictureBox12_Click);
             // 
             // lblContraseña
             // 
@@ -385,6 +409,7 @@
             this.lblContraseña.Size = new System.Drawing.Size(74, 21);
             this.lblContraseña.TabIndex = 45;
             this.lblContraseña.Text = "Contraseña";
+            this.lblContraseña.Click += new System.EventHandler(this.lblContraseña_Click);
             // 
             // tbContrasenia
             // 
@@ -394,6 +419,7 @@
             this.tbContrasenia.PasswordChar = '*';
             this.tbContrasenia.Size = new System.Drawing.Size(130, 13);
             this.tbContrasenia.TabIndex = 42;
+            this.tbContrasenia.TextChanged += new System.EventHandler(this.tbContrasenia_TextChanged);
             // 
             // pictureBox13
             // 
@@ -406,6 +432,7 @@
             this.pictureBox13.Size = new System.Drawing.Size(170, 40);
             this.pictureBox13.TabIndex = 44;
             this.pictureBox13.TabStop = false;
+            this.pictureBox13.Click += new System.EventHandler(this.pictureBox13_Click);
             // 
             // pictureBox14
             // 
@@ -418,6 +445,7 @@
             this.pictureBox14.Size = new System.Drawing.Size(175, 45);
             this.pictureBox14.TabIndex = 43;
             this.pictureBox14.TabStop = false;
+            this.pictureBox14.Click += new System.EventHandler(this.pictureBox14_Click);
             // 
             // lblUsuario
             // 
@@ -430,6 +458,7 @@
             this.lblUsuario.Size = new System.Drawing.Size(54, 21);
             this.lblUsuario.TabIndex = 41;
             this.lblUsuario.Text = "Usuario";
+            this.lblUsuario.Click += new System.EventHandler(this.lblUsuario_Click);
             // 
             // tbUsuario
             // 
@@ -439,6 +468,7 @@
             this.tbUsuario.PasswordChar = '*';
             this.tbUsuario.Size = new System.Drawing.Size(130, 13);
             this.tbUsuario.TabIndex = 38;
+            this.tbUsuario.TextChanged += new System.EventHandler(this.tbUsuario_TextChanged);
             // 
             // pictureBox15
             // 
@@ -451,6 +481,7 @@
             this.pictureBox15.Size = new System.Drawing.Size(170, 40);
             this.pictureBox15.TabIndex = 40;
             this.pictureBox15.TabStop = false;
+            this.pictureBox15.Click += new System.EventHandler(this.pictureBox15_Click);
             // 
             // pictureBox16
             // 
@@ -463,6 +494,7 @@
             this.pictureBox16.Size = new System.Drawing.Size(175, 45);
             this.pictureBox16.TabIndex = 39;
             this.pictureBox16.TabStop = false;
+            this.pictureBox16.Click += new System.EventHandler(this.pictureBox16_Click);
             // 
             // lblCategoria
             // 
@@ -475,6 +507,7 @@
             this.lblCategoria.Size = new System.Drawing.Size(65, 21);
             this.lblCategoria.TabIndex = 37;
             this.lblCategoria.Text = "Categoria";
+            this.lblCategoria.Click += new System.EventHandler(this.lblCategoria_Click);
             // 
             // tbCategoria
             // 
@@ -484,6 +517,7 @@
             this.tbCategoria.PasswordChar = '*';
             this.tbCategoria.Size = new System.Drawing.Size(130, 13);
             this.tbCategoria.TabIndex = 34;
+            this.tbCategoria.TextChanged += new System.EventHandler(this.tbCategoria_TextChanged);
             // 
             // pictureBox17
             // 
@@ -496,6 +530,7 @@
             this.pictureBox17.Size = new System.Drawing.Size(170, 40);
             this.pictureBox17.TabIndex = 36;
             this.pictureBox17.TabStop = false;
+            this.pictureBox17.Click += new System.EventHandler(this.pictureBox17_Click);
             // 
             // pictureBox18
             // 
@@ -508,6 +543,7 @@
             this.pictureBox18.Size = new System.Drawing.Size(175, 45);
             this.pictureBox18.TabIndex = 35;
             this.pictureBox18.TabStop = false;
+            this.pictureBox18.Click += new System.EventHandler(this.pictureBox18_Click);
             // 
             // btnRegistrarUsuario
             // 
@@ -530,6 +566,7 @@
             this.pictureBox20.Size = new System.Drawing.Size(131, 61);
             this.pictureBox20.TabIndex = 46;
             this.pictureBox20.TabStop = false;
+            this.pictureBox20.Click += new System.EventHandler(this.pictureBox20_Click);
             // 
             // btnVolver
             // 
@@ -552,6 +589,7 @@
             this.pictureBox19.Size = new System.Drawing.Size(131, 61);
             this.pictureBox19.TabIndex = 48;
             this.pictureBox19.TabStop = false;
+            this.pictureBox19.Click += new System.EventHandler(this.pictureBox19_Click);
             // 
             // RegistroUsuarios
             // 

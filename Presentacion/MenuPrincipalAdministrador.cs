@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Presentacion
 {
-    public partial class MenuPrincipal : Form
+    public partial class MenuPrincipalAdministrador : Form
     {
-        public MenuPrincipal()
+        public MenuPrincipalAdministrador()
         {
             InitializeComponent();
         }
@@ -36,7 +36,9 @@ namespace Presentacion
 
         private void button3_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            Form formulario = new GestionProductos();
+            formulario.Show();
         }
 
         private void pictureBox4_Click(object sender, EventArgs e)
@@ -78,6 +80,13 @@ namespace Presentacion
         private void btnSalir_Click_1(object sender, EventArgs e)
         {
             Application.Exit(); 
+        }
+
+        private void btnReportes_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form formulario = new ReportesAdmSup();
+            formulario.Show();
         }
     }
 }

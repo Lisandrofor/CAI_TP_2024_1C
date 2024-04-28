@@ -17,6 +17,11 @@ namespace Presentacion
             InitializeComponent();
         }
 
+        private MenuPrincipalSupervisor menuSupervisor = new MenuPrincipalSupervisor();
+        private MenuPrincipalAdministrador menuAdministrador = new MenuPrincipalAdministrador();
+        private MenuPrincipalVendedor menuVendedor = new MenuPrincipalVendedor();
+     
+
         private void Login_Load(object sender, EventArgs e)
         {
 
@@ -35,8 +40,30 @@ namespace Presentacion
         private void btnIngresar_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Form formulario = new MenuPrincipal();
-            formulario.Show();
+            string usuarioActualTipo = tbName.Text;
+            if (usuarioActualTipo == "v")
+            {
+                menuVendedor = new MenuPrincipalVendedor();
+                menuVendedor.Show();
+            }
+            else if (usuarioActualTipo == "s")
+            {
+                menuSupervisor = new MenuPrincipalSupervisor();
+                menuSupervisor.Show();
+            }
+            else if (usuarioActualTipo == "a")
+            {
+                menuAdministrador = new MenuPrincipalAdministrador();
+                menuAdministrador.Show();
+            }
+           
+        }
+
+        private void tbName_TextChanged(object sender, EventArgs e)
+        {
+            
+
+            
         }
     }
 }

@@ -34,9 +34,14 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.btnVolver = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnBajadeProveedores = new System.Windows.Forms.Button();
+            this.btnModificacionProveedor = new System.Windows.Forms.Button();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.btnBajaProveedor = new System.Windows.Forms.Button();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // lblTituloMenu
@@ -72,6 +77,7 @@
             this.pictureBox3.Size = new System.Drawing.Size(131, 61);
             this.pictureBox3.TabIndex = 11;
             this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
             // 
             // btnVolver
             // 
@@ -96,16 +102,48 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // btnBajadeProveedores
+            // btnModificacionProveedor
             // 
-            this.btnBajadeProveedores.BackColor = System.Drawing.Color.White;
-            this.btnBajadeProveedores.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBajadeProveedores.Location = new System.Drawing.Point(518, 304);
-            this.btnBajadeProveedores.Name = "btnBajadeProveedores";
-            this.btnBajadeProveedores.Size = new System.Drawing.Size(126, 56);
-            this.btnBajadeProveedores.TabIndex = 15;
-            this.btnBajadeProveedores.Text = "Baja de Proveedores";
-            this.btnBajadeProveedores.UseVisualStyleBackColor = false;
+            this.btnModificacionProveedor.BackColor = System.Drawing.Color.White;
+            this.btnModificacionProveedor.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnModificacionProveedor.Location = new System.Drawing.Point(517, 291);
+            this.btnModificacionProveedor.Name = "btnModificacionProveedor";
+            this.btnModificacionProveedor.Size = new System.Drawing.Size(126, 56);
+            this.btnModificacionProveedor.TabIndex = 22;
+            this.btnModificacionProveedor.Text = "Modificacion Proveedores";
+            this.btnModificacionProveedor.UseVisualStyleBackColor = false;
+            this.btnModificacionProveedor.Click += new System.EventHandler(this.btnModificacionProveedor_Click);
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.BackColor = System.Drawing.Color.Black;
+            this.pictureBox6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox6.Location = new System.Drawing.Point(515, 289);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(131, 61);
+            this.pictureBox6.TabIndex = 21;
+            this.pictureBox6.TabStop = false;
+            // 
+            // btnBajaProveedor
+            // 
+            this.btnBajaProveedor.BackColor = System.Drawing.Color.White;
+            this.btnBajaProveedor.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBajaProveedor.Location = new System.Drawing.Point(515, 387);
+            this.btnBajaProveedor.Name = "btnBajaProveedor";
+            this.btnBajaProveedor.Size = new System.Drawing.Size(126, 56);
+            this.btnBajaProveedor.TabIndex = 24;
+            this.btnBajaProveedor.Text = "Baja Proveedores";
+            this.btnBajaProveedor.UseVisualStyleBackColor = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.Black;
+            this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox2.Location = new System.Drawing.Point(513, 385);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(131, 61);
+            this.pictureBox2.TabIndex = 23;
+            this.pictureBox2.TabStop = false;
             // 
             // GestionProveedores
             // 
@@ -113,7 +151,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1163, 665);
-            this.Controls.Add(this.btnBajadeProveedores);
+            this.Controls.Add(this.btnBajaProveedor);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.btnModificacionProveedor);
+            this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.btnVolver);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnRegistrarUsuario);
@@ -124,6 +165,8 @@
             this.Load += new System.EventHandler(this.GestionProveedores_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -136,6 +179,9 @@
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Button btnVolver;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button btnBajadeProveedores;
+        private System.Windows.Forms.Button btnModificacionProveedor;
+        private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.Button btnBajaProveedor;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }
