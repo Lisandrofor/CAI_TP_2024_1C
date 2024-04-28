@@ -51,7 +51,7 @@
             // 
             this.btnVolver.BackColor = System.Drawing.Color.White;
             this.btnVolver.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVolver.Location = new System.Drawing.Point(94, 588);
+            this.btnVolver.Location = new System.Drawing.Point(95, 514);
             this.btnVolver.Name = "btnVolver";
             this.btnVolver.Size = new System.Drawing.Size(126, 56);
             this.btnVolver.TabIndex = 53;
@@ -63,7 +63,7 @@
             // 
             this.pictureBox19.BackColor = System.Drawing.Color.Black;
             this.pictureBox19.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox19.Location = new System.Drawing.Point(92, 586);
+            this.pictureBox19.Location = new System.Drawing.Point(93, 512);
             this.pictureBox19.Name = "pictureBox19";
             this.pictureBox19.Size = new System.Drawing.Size(131, 61);
             this.pictureBox19.TabIndex = 52;
@@ -75,7 +75,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(1157, 731);
+            this.ClientSize = new System.Drawing.Size(1170, 640);
             this.Controls.Add(this.btnVolver);
             this.Controls.Add(this.pictureBox19);
             this.Controls.Add(this.lblStockCritico);

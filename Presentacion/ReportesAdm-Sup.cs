@@ -31,5 +31,26 @@ namespace Presentacion
         {
 
         }
+
+        private void btnReporteStock_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form formulario = new ReporteStockCritico();
+            formulario.Show();
+        }
+
+        private void btnReorteVentasPorVendedor_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form formulario = new ReporteVentasPorVendedor();
+            formulario.Show();
+        }
+
+        private void btnProductosmasvendidopoprcategoria_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form formulario = new ReporteProductoMasVendidoPorCategoria();
+            formulario.Show();
+        }
     }
 }
