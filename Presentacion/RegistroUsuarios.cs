@@ -28,6 +28,8 @@ namespace Presentacion
         private void btnRegistrarUsuario_Click(object sender, EventArgs e)
         {
 
+            int host = 1;
+            string idusuarioactual = "";
             string nombre = tbNombre.Text;
             string apellido = tbApellido.Text;
             int dni = int.Parse(tbDNI.Text);
@@ -39,12 +41,11 @@ namespace Presentacion
             string contraseña = tbContrasenia.Text;
 
 
-            RegistroUsuario nuevoUsuario = new RegistroUsuario(nombre, apellido, dni, email, direccion, telefono, categoria, nombreUsuario, contraseña);
+            RegistroUsuario nuevoUsuario = new RegistroUsuario(host,idusuarioactual,nombre, apellido, dni, email, direccion, telefono, categoria, nombreUsuario, contraseña);
 
             Lista.AgregarUsuario(nuevoUsuario);
+            
 
-             Cargar.nuevacarga = new Cargar();
-            nuevacarga.CargarPrivado(lista);
             BorrarCampos();
             MessageBox.Show($"Usuario Agregado Exitosamente");
 
@@ -80,6 +81,6 @@ namespace Presentacion
 
         }
 
-        mostrarUsuarios(Path);
+        
     }
 }
