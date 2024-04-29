@@ -41,14 +41,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="GestorDeNegocios.cs" />
+    <Compile Include="GestorDeUsuarios.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Presentacion\Presentacion.csproj">
-      <Project>{7839c5d7-7c2c-43f4-97d5-b1efe65cb994}</Project>
-      <Name>Presentacion</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

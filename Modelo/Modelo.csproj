@@ -41,18 +41,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Loginuser.cs" />
     <Compile Include="Usuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Negocio\Negocio.csproj">
-      <Project>{20fcb325-8174-470a-951a-c0f58f5ddcc2}</Project>
-      <Name>Negocio</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Presentacion\Presentacion.csproj">
-      <Project>{7839c5d7-7c2c-43f4-97d5-b1efe65cb994}</Project>
-      <Name>Presentacion</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
