@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Negocio;
 
 namespace Presentacion
 {
@@ -39,23 +40,35 @@ namespace Presentacion
 
         private void btnIngresar_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            
+           ValidadorLogin validador = new ValidadorLogin();
             string usuarioActualTipo = tbName.Text;
+            string contraseñaActual = tbContraseña.Text;
             if (usuarioActualTipo == "v")
             {
                 menuVendedor = new MenuPrincipalVendedor();
+                this.Hide();
                 menuVendedor.Show();
+
             }
             else if (usuarioActualTipo == "s")
             {
                 menuSupervisor = new MenuPrincipalSupervisor();
+                this.Hide();
                 menuSupervisor.Show();
             }
             else if (usuarioActualTipo == "a")
             {
                 menuAdministrador = new MenuPrincipalAdministrador();
+                this.Hide();
                 menuAdministrador.Show();
             }
+            else if (usuarioActualTipo == "" || contraseñaActual == "" )
+            {
+                validador.ValidacionLogin();
+            }
+
+           
            
         }
 
