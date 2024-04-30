@@ -1,0 +1,3 @@
+a;a;administrador
+s;s;supervisor
+v;v;vendedor

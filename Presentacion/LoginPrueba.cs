@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,21 +11,23 @@ using System.Windows.Forms;
 
 namespace Presentacion
 {
-    public partial class ModificacionUsuario : Form
+    public partial class LoginPrueba : Form
     {
-        public ModificacionUsuario()
+        public LoginPrueba()
         {
             InitializeComponent();
         }
 
-        private void btnVolver_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            Form formulario = new GestionUsuarios();
-            formulario.Show();
+            TextReader leer = new StreamReader("BaseUsuarios.txt");
+
+
+
+            leer.Close();
         }
 
-        private void btnModificarUsuario_Click(object sender, EventArgs e)
+        private void label4_Click(object sender, EventArgs e)
         {
 
         }

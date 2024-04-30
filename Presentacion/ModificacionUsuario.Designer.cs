@@ -136,6 +136,7 @@
             this.btnModificarUsuario.TabIndex = 87;
             this.btnModificarUsuario.Text = "Modificar";
             this.btnModificarUsuario.UseVisualStyleBackColor = false;
+            this.btnModificarUsuario.Click += new System.EventHandler(this.btnModificarUsuario_Click);
             // 
             // pictureBox20
             // 
