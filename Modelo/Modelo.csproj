@@ -42,7 +42,7 @@
   </ItemGroup>
   <ItemGroup>
 
->>>>>>> Master
+
     <Compile Include="Usuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
