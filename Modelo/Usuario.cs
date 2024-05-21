@@ -180,15 +180,3 @@ namespace Modelo
 
     }
 
-
-
-
-
-
-
-
-
-
-
-
->>>>>>> Master
