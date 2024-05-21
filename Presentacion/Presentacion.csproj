@@ -46,7 +46,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-
     <Compile Include="Devolucion.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -158,8 +157,6 @@
     <Compile Include="GestionProveedores.cs">
       <SubType>Form</SubType>
     </Compile>
-
-    
     <Compile Include="GestionProveedores.Designer.cs">
       <DependentUpon>GestionProveedores.cs</DependentUpon>
     </Compile>
@@ -171,14 +168,11 @@
     <Compile Include="Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
-
     <Compile Include="MenuPrincipalAdministrador.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MenuPrincipalAdministrador.Designer.cs">
       <DependentUpon>MenuPrincipalAdministrador.cs</DependentUpon>
-
-    
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -281,12 +275,13 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-
+    <ProjectReference Include="..\Modelo\Modelo.csproj">
+      <Project>{f45a23ac-6583-4dea-9e41-bbd71c0b8f0d}</Project>
+      <Name>Modelo</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Negocio\Negocio.csproj">
       <Project>{20fcb325-8174-470a-951a-c0f58f5ddcc2}</Project>
       <Name>Negocio</Name>
-
     </ProjectReference>
   </ItemGroup>
-  
 </Project>
