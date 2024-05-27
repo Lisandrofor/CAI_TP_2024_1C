@@ -10,7 +10,7 @@ namespace Modelo
 {
     public class UsuarioWS
     {
-        private string _nombre, _apellido, _usuario, _direccion, _telefono, _email, _nombreUsuario, _contraseña;
+        private string _nombre, _apellido, _usuario, _direccion, _telefono, _email, _nombreUsuario, _contraseña,_categoria;
         private DateTime _fechaNacimiento;
 
         private int _host, _dni;
@@ -21,7 +21,9 @@ namespace Modelo
         public int dni { get => _dni; set => _dni = value; }
         public string direccion { get => _direccion; set => _direccion = value; }
         public string telefono { get => _telefono; set => _telefono = value; }
-        public string email { get => _usuario; set => _usuario = value; }
+        public string email { get => _email; set => _email = value; }
+
+        public string Categoria { get=>_categoria; set=>_categoria=value; }
 
         public DateTime fechaNacimiento { get => _fechaNacimiento; set => _fechaNacimiento = value; }
 
@@ -30,10 +32,29 @@ namespace Modelo
         public string contraseña { get => _contraseña; set => _contraseña = value; }
 
 
-        public UsuarioWS()
+       
+        public UsuarioWS(int host, string idusuarioactual, string nombre, string apellido, int dni, string email, string direccion, string telefono, string categoria, string nombreUsuario, string contraseña)
         {
+            this.host = host;
+            this.idUsuario = idusuarioactual;
+            this.nombre = nombre;
+            this.apellido = apellido;
+            this.dni = dni;
+            this.email = email;
+            this.direccion = direccion;
+            this.telefono = telefono;
+            this.Categoria = categoria;
+            this.nombreUsuario = nombreUsuario;
+            this.contraseña = contraseña;
+
+
+
+
 
         }
+
+
+
 
         public override string ToString()
         {

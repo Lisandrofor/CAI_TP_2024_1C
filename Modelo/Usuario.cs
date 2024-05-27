@@ -137,36 +137,36 @@ namespace Modelo
         public static void AgregarUsuario(RegistroUsuario nuevoUsuario)
         {
             listadeUsuarios.Add(nuevoUsuario);
-            CargarUsuarios(listadeUsuarios);
-
-
-
-        }
-       
-
-        private static void CargarUsuarios(List<RegistroUsuario> listadeUsuarios)
-        {
-
-            string docPath = ;
-
-
-
-
-            using (StreamWriter registro = new StreamWriter(docPath, true))
-            {
-                foreach (RegistroUsuario registroUsuario in listadeUsuarios)
-                    registro.WriteLine(registroUsuario.Host + ";" + registroUsuario.IdUsuarioActual + ";" + registroUsuario.Nombre + ";" + registroUsuario.Apellido + ";" + registroUsuario.DNI + ";" + registroUsuario.Email + ";" + registroUsuario.Direccion + ";" + registroUsuario.Categoria + ";" + registroUsuario.NombreUsuario + ";" + registroUsuario.Contraseña);
-
-
-
-
-            }
+            //CargarUsuarios(listadeUsuarios);
 
 
 
         }
 
-        
+
+        //private static void CargarUsuarios(List<RegistroUsuario> listadeUsuarios)
+        //{
+
+        //    string docPath =
+
+
+
+
+        //    using (StreamWriter registro = new StreamWriter(docPath, true))
+        //    {
+        //        foreach (RegistroUsuario registroUsuario in listadeUsuarios)
+        //            registro.WriteLine(registroUsuario.Host + ";" + registroUsuario.IdUsuarioActual + ";" + registroUsuario.Nombre + ";" + registroUsuario.Apellido + ";" + registroUsuario.DNI + ";" + registroUsuario.Email + ";" + registroUsuario.Direccion + ";" + registroUsuario.Categoria + ";" + registroUsuario.NombreUsuario + ";" + registroUsuario.Contraseña);
+
+
+
+
+        //    }
+
+
+
+        //}
+
+
 
 
 
