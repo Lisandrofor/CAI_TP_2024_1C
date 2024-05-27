@@ -61,23 +61,23 @@ namespace accesoadatos
 
 
         //get para traer usuarios
-        public static List<UsuarioWS> listarusuarios()
-        {
+        //public static List<UsuarioWS> listarusuarios()
+        //{
 
-            HttpResponseMessage response = WebHelper.Get("usuario/traerusuariosactivos?id=" + usuarioadmin);
+        //    HttpResponseMessage response = WebHelper.Get("usuario/traerusuariosactivos?id=" + usuarioadmin);
 
-            if (!response.IsSuccessStatusCode)
-            {
-                throw new Exception("verifique los datos ingresados");
-            }
-            else
-            {
-                var contentstream = response.Content.ReadAsStringAsync().Result;
-                List<UsuarioWS> listadousuarios = JsonConvert.DeserializeObject<List<UsuarioWS>>(contentstream);
-                return listadousuarios;
+        //    if (!response.IsSuccessStatusCode)
+        //    {
+        //        throw new Exception("verifique los datos ingresados");
+        //    }
+        //    else
+        //    {
+        //        var contentstream = response.Content.ReadAsStringAsync().Result;
+        //        List<UsuarioWS> listadousuarios = JsonConvert.DeserializeObject<List<UsuarioWS>>(contentstream);
+        //        return listadousuarios;
 
-            }
-        }
+        //    }
+        //}
 
 
         //patch cambiar contraseña
@@ -108,22 +108,22 @@ namespace accesoadatos
 
         //delete para baja de usuario
 
-        public static void borrarusuario(string idusuario, string idusuariomaster)
-        {
-            Dictionary<string, string> map = new Dictionary<string, string>();
-            map.Add("id", idusuario);
-            map.Add("idusuario", idusuariomaster);
+        //public static void borrarusuario(string idusuario, string idusuariomaster)
+        //{
+        //    Dictionary<string, string> map = new Dictionary<string, string>();
+        //    map.Add("id", idusuario);
+        //    map.Add("idusuario", idusuariomaster);
 
-            var jsonrequest = JsonConvert.SerializeObject(map);
+        //    var jsonrequest = JsonConvert.SerializeObject(map);
 
-            HttpResponseMessage response = WebHelper.DeleteConBody("usuario/bajausuario", jsonrequest);
+        //    HttpResponseMessage response = WebHelper.DeleteConBody("usuario/bajausuario", jsonrequest);
 
-            if (!response.IsSuccessStatusCode)
-            {
-                throw new Exception("verifique los datos ingresados");
-            }
+        //    if (!response.IsSuccessStatusCode)
+        //    {
+        //        throw new Exception("verifique los datos ingresados");
+        //    }
 
-        }
+        //}
 
 
 
