@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Modelo;
+using Negocio;
 
 
 namespace Presentacion
@@ -40,10 +41,18 @@ namespace Presentacion
             string nombreUsuario = tbUsuario.Text;
             string contraseña = tbContrasenia.Text;
 
+            
+
 
             RegistroUsuario nuevoUsuario = new RegistroUsuario(host,idusuarioactual,nombre, apellido, dni, email, direccion, telefono, categoria, nombreUsuario, contraseña);
+            GestorDeUsuarios gestorUsuario = new GestorDeUsuarios();
+
+            gestorUsuario.ValidarNombre(nombre);
+            gestorUsuario.ValidarApellido(apellido);
+            gestorUsuario.ValidarUsername(nombre, apellido, nombreUsuario);
 
             Lista.AgregarUsuario(nuevoUsuario);
+            
             
 
             BorrarCampos();
