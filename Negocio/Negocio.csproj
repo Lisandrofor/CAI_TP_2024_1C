@@ -42,9 +42,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="GestorDeUsuarios.cs" />
+    <Compile Include="GestordeUsuariosWS.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\AccesoaDatos\AccesoaDatos.csproj">
+      <Project>{56d6d1b9-0e20-4557-bf1d-f02c915331e8}</Project>
+      <Name>AccesoaDatos</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Modelo\Modelo.csproj">
       <Project>{f45a23ac-6583-4dea-9e41-bbd71c0b8f0d}</Project>
       <Name>Modelo</Name>
