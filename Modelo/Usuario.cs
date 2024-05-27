@@ -34,6 +34,23 @@ namespace Modelo
 
         // Constructor
 
+        public Usuario(UsuarioWS usuarioWS)
+        {
+
+            this.Host = usuarioWS.host;
+            this.IdUsuarioActual = usuarioWS.idUsuario;
+            this.Nombre = usuarioWS.nombre;
+            this.Apellido = usuarioWS.apellido;
+            this.DNI = usuarioWS.dni;
+            this.Direccion = usuarioWS.direccion;
+            this.Telefono = usuarioWS.telefono;
+            this.Email = usuarioWS.email;
+            this.FechaNacimiento = usuarioWS.fechaNacimiento;
+            this.NombreUsuario = usuarioWS.nombreUsuario;
+            this.Contraseña = usuarioWS.contraseña;
+
+        }
+
 
 
         public Usuario(int host,string idusuarioactual,string nombre,string apellido, int dni, string email, string direccion, string telefono, string categoria, string nombreUsuario, string contraseña)
@@ -41,7 +58,7 @@ namespace Modelo
             this.Nombre = nombre;
             this.Apellido = apellido;
             this.NombreUsuario = nombreUsuario;
-            this.Contraseña = GenerarPasswordTemporal();
+            //this.Contraseña = GenerarPasswordTemporal();
 
         }
 
@@ -98,11 +115,18 @@ namespace Modelo
 
 
             }
-        
+       
+
+
+
 
 
 
     }
+    
+
+
+
 
     public class Lista
     {
@@ -123,7 +147,7 @@ namespace Modelo
         private static void CargarUsuarios(List<RegistroUsuario> listadeUsuarios)
         {
 
-            string docPath = @"C:\Users\pindy\Source\Repos\CAI_TP_2024_1C\BaseUsuarios.txt";
+            string docPath = ;
 
 
 
@@ -141,6 +165,8 @@ namespace Modelo
 
 
         }
+
+        
 
 
 
