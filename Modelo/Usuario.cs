@@ -13,8 +13,9 @@ namespace Modelo
     public abstract class Usuario
     {
         // Atributos privados
+        public Guid Id { get; set; }
         public int Host { get; set; }
-        public string IdUsuarioActual { get; set; }
+        public string IdUsuario { get; set; }
 
         public string Nombre { get; set; }
 
@@ -38,7 +39,7 @@ namespace Modelo
         {
 
             this.Host = usuarioWS.host;
-            this.IdUsuarioActual = usuarioWS.idUsuario;
+            this.IdUsuario = usuarioWS.Id;
             this.Nombre = usuarioWS.nombre;
             this.Apellido = usuarioWS.apellido;
             this.DNI = usuarioWS.dni;
@@ -53,7 +54,7 @@ namespace Modelo
 
 
 
-        public Usuario(int host,string idusuarioactual,string nombre,string apellido, int dni, string email, string direccion, string telefono, string categoria, string nombreUsuario, string contraseña)
+        public Usuario(int host,string idusuarioactual,string nombre,string apellido, int dni, string email, string direccion, string telefono, string categoria, string nombreUsuario, string contraseña,DateTime FechaNac)
         {
             this.Nombre = nombre;
             this.Apellido = apellido;
@@ -96,10 +97,10 @@ namespace Modelo
 
     public class RegistroUsuario:Usuario
         {
-         public RegistroUsuario(int host, string idusuarioactual,string nombre, string apellido, int dni, string email, string direccion, string telefono, string categoria, string nombreUsuario, string contraseña) : base(host,idusuarioactual,nombre,apellido,dni,email,direccion,telefono,categoria,nombreUsuario,contraseña)
+         public RegistroUsuario(int host, string idusuarioactual,string nombre, string apellido, int dni, string email, string direccion, string telefono, string categoria, string nombreUsuario, string contraseña, DateTime FechaNac) : base(host,idusuarioactual,nombre,apellido,dni,email,direccion,telefono,categoria,nombreUsuario,contraseña,FechaNac)
             {
             this.Host = host;
-            this.IdUsuarioActual = idusuarioactual;
+            this.IdUsuario = idusuarioactual;
             this.Nombre = nombre;
             this.Apellido = apellido;
             this.DNI = dni;
@@ -109,6 +110,7 @@ namespace Modelo
             this.Categoria = categoria;
             this.NombreUsuario = nombreUsuario;
             this.Contraseña = contraseña;
+            this.FechaNacimiento = FechaNac;
 
 
 

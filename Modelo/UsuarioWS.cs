@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using System.Security.Cryptography;
+using System.Security.Principal;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -12,9 +13,9 @@ namespace Modelo
     {
         private string _nombre, _apellido, _usuario, _direccion, _telefono, _email, _nombreUsuario, _contraseña,_categoria;
         private DateTime _fechaNacimiento;
-
+        public string Id { get; set; }
         private int _host, _dni;
-        public string idUsuario { get; set; }
+        public string idUsuario { get => idUsuario; set => idUsuario = value; }
         public int host { get => _host; set => _host = value; }
         public string nombre { get => _nombre; set => _nombre = value; }
         public string apellido { get => _apellido; set => _apellido = value; }
@@ -33,7 +34,7 @@ namespace Modelo
 
 
        
-        public UsuarioWS(int host, string idusuarioactual, string nombre, string apellido, int dni, string email, string direccion, string telefono, string categoria, string nombreUsuario, string contraseña)
+        public UsuarioWS(int host, string idusuarioactual, string nombre, string apellido, int dni, string email, string direccion, string telefono, string nombreUsuario, string contraseña)
         {
             this.host = host;
             this.idUsuario = idusuarioactual;
@@ -43,7 +44,7 @@ namespace Modelo
             this.email = email;
             this.direccion = direccion;
             this.telefono = telefono;
-            this.Categoria = categoria;
+            //this.Categoria = categoria;
             this.nombreUsuario = nombreUsuario;
             this.contraseña = contraseña;
 
