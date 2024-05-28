@@ -10,11 +10,11 @@ using System.Threading.Tasks;
 
 namespace Modelo
 {
-    public abstract class Usuario
+    public class Usuario
     {
         // Atributos privados
         public Guid Id { get; set; }
-        
+
         public string IdUsuario { get; set; }
 
         public int Host { get; set; }
@@ -51,27 +51,27 @@ namespace Modelo
             this.FechaNacimiento = usuarioWS.fechaNacimiento;
             this.NombreUsuario = usuarioWS.nombreUsuario;
             this.Contraseña = usuarioWS.contraseña;
-            
+
 
         }
 
 
 
-        public Usuario(int host,string idusuarioactual,string nombre,string apellido, int dni, string email, string direccion, string telefono, string categoria, string nombreUsuario, string contraseña,DateTime fechaNacimiento)
-        {
-            this.Nombre = nombre;
-            this.Apellido = apellido;
-            this.NombreUsuario = nombreUsuario;
-            //this.Contraseña = GenerarPasswordTemporal();
+        //public Usuario(int host, string idusuarioactual, string nombre, string apellido, int dni, string email, string direccion, string telefono, string categoria, string nombreUsuario, string contraseña, DateTime fechaNacimiento)
+        //{
+        //    this.Nombre = nombre;
+        //    this.Apellido = apellido;
+        //    this.NombreUsuario = nombreUsuario;
+        //    this.Contraseña = GenerarPasswordTemporal();
 
-        }
-
-
+        //}
 
 
-    
 
-        
+
+
+
+
 
         public string NuevoPass // nueva variable para la nueva pass
         {
@@ -84,24 +84,23 @@ namespace Modelo
         }
 
 
-      
 
 
-      
 
 
-       
+
+
+
 
         override public String ToString()
         {
             return this.Nombre + " - " + this.Apellido;
         }
-    }
 
-    public class RegistroUsuario:Usuario
+
+
+        public Usuario(int host, string idusuarioactual, string nombre, string apellido, int dni, string email, string direccion, string telefono, string categoria, string nombreUsuario, string contraseña, DateTime FechaNac) : base(host, idusuarioactual, nombre, apellido, dni, email, direccion, telefono, categoria, nombreUsuario, contraseña, FechaNac)
         {
-         public RegistroUsuario(int host, string idusuarioactual,string nombre, string apellido, int dni, string email, string direccion, string telefono, string categoria, string nombreUsuario, string contraseña, DateTime FechaNac) : base(host,idusuarioactual,nombre,apellido,dni,email,direccion,telefono,categoria,nombreUsuario,contraseña,FechaNac)
-            {
             this.Host = host;
             this.IdUsuario = idusuarioactual;
             this.Nombre = nombre;
@@ -119,8 +118,11 @@ namespace Modelo
 
 
 
-            }
-       
+        }
+
+
+
+
 
 
 
@@ -128,18 +130,15 @@ namespace Modelo
 
 
     }
-    
-
-
 
 
     public class Lista
     {
 
 
-        public static  List<RegistroUsuario> listadeUsuarios = new List<RegistroUsuario>();
+        public static  List<Usuario> listadeUsuarios = new List<Usuario>();
 
-        public static void AgregarUsuario(RegistroUsuario nuevoUsuario)
+        public static void AgregarUsuario(Usuario nuevoUsuario)
         {
             listadeUsuarios.Add(nuevoUsuario);
             //CargarUsuarios(listadeUsuarios);
