@@ -13,11 +13,40 @@ namespace Negocio
         private UsuarioDatos UsuarioDatos = new UsuarioDatos();
         private String idAdministrador = "70b37dc1-8fde-4840-be47-9ababd0ee7e5";
 
-        public void AgregarUsuario(int host,string nombre, string apellido, int dni, string direccion, string telefono, string email, DateTime fechaNacimiento,string nombreUsuario,string contraseña,string categoria,string idusuarioactual)
-        {
-            UsuarioWS usuario = new UsuarioWS(host,idusuarioactual,nombre,apellido,dni,email,direccion,telefono,nombreUsuario,contraseña,fechaNacimiento);
-            UsuarioDatos.AgregarUsuario(usuario);
+        
 
+
+        public bool AgregarUsuario(string nombre, int host, int dni, string direccion, string telefono, string apellido,
+       string email, string idUsuarioActual, string nombreUsuario,string contraseña, DateTime fechaNacimiento)
+        {
+
+            // Crear un objeto usuarioWS
+            var nuevoUsuarioWS = new UsuarioWS
+            {
+
+                idUsuario = "0cdbc5a5-69d9-4ab8-8cb3-9932ce33f54a",
+                host = host,//pasa segun opcion menu
+                nombre = nombre,
+                apellido = apellido,
+                dni = dni,
+                direccion = direccion,
+                telefono = telefono,
+                email = email,
+                fechaNacimiento = fechaNacimiento,
+                nombreUsuario = nombreUsuario,
+                contraseña = "Temp1234"
+            };
+
+            try
+            {
+                UsuarioDatos.AgregarUsuario(nuevoUsuarioWS);
+
+                return true;
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
         }
 
     }
