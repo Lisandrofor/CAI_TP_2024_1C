@@ -34,7 +34,7 @@ namespace Modelo
 
 
        
-        public UsuarioWS(int host, string idusuarioactual, string nombre, string apellido, int dni, string email, string direccion, string telefono, string nombreUsuario, string contraseña)
+        public UsuarioWS(int host, string idusuarioactual, string nombre, string apellido, int dni, string email, string direccion, string telefono, string nombreUsuario, string contraseña,DateTime fechaNac)
         {
             this.host = host;
             this.idUsuario = idusuarioactual;
@@ -47,6 +47,7 @@ namespace Modelo
             //this.Categoria = categoria;
             this.nombreUsuario = nombreUsuario;
             this.contraseña = contraseña;
+            this.fechaNacimiento = fechaNac;
 
 
 

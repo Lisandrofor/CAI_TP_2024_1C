@@ -14,8 +14,10 @@ namespace Modelo
     {
         // Atributos privados
         public Guid Id { get; set; }
-        public int Host { get; set; }
+        
         public string IdUsuario { get; set; }
+
+        public int Host { get; set; }
 
         public string Nombre { get; set; }
 
@@ -49,12 +51,13 @@ namespace Modelo
             this.FechaNacimiento = usuarioWS.fechaNacimiento;
             this.NombreUsuario = usuarioWS.nombreUsuario;
             this.Contraseña = usuarioWS.contraseña;
+            
 
         }
 
 
 
-        public Usuario(int host,string idusuarioactual,string nombre,string apellido, int dni, string email, string direccion, string telefono, string categoria, string nombreUsuario, string contraseña,DateTime FechaNac)
+        public Usuario(int host,string idusuarioactual,string nombre,string apellido, int dni, string email, string direccion, string telefono, string categoria, string nombreUsuario, string contraseña,DateTime fechaNacimiento)
         {
             this.Nombre = nombre;
             this.Apellido = apellido;
