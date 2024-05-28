@@ -99,7 +99,7 @@ namespace Modelo
 
 
 
-        public Usuario(int host, string idusuarioactual, string nombre, string apellido, int dni, string email, string direccion, string telefono, string categoria, string nombreUsuario, string contraseña, DateTime FechaNac) : base(host, idusuarioactual, nombre, apellido, dni, email, direccion, telefono, categoria, nombreUsuario, contraseña, FechaNac)
+        public Usuario(int host, string idusuarioactual, string nombre, string apellido, int dni, string email, string direccion, string telefono, string categoria, string nombreUsuario, string contraseña, DateTime FechaNac)
         {
             this.Host = host;
             this.IdUsuario = idusuarioactual;
