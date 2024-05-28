@@ -40,11 +40,12 @@ namespace Presentacion
             string categoria = comboBox1.Text;
             string nombreUsuario = tbUsuario.Text;
             string contraseña = tbContrasenia.Text;
+            DateTime fechaNac = DateTime.Parse(TbFechaNac.Text);
 
             
 
 
-            RegistroUsuario nuevoUsuario = new RegistroUsuario(host,idusuarioactual,nombre, apellido, dni, email, direccion, telefono, categoria, nombreUsuario, contraseña);
+            RegistroUsuario nuevoUsuario = new RegistroUsuario(host,idusuarioactual,nombre, apellido, dni, email, direccion, telefono, categoria, nombreUsuario, contraseña,fechaNac);
             GestorDeUsuarios gestorUsuario = new GestorDeUsuarios();
 
             gestorUsuario.ValidarNombre(nombre);
@@ -86,6 +87,7 @@ namespace Presentacion
             tbTelefono.Clear();
             tbUsuario.Clear();
             tbContrasenia.Clear();
+            TbFechaNac.Clear();
 
 
         }
