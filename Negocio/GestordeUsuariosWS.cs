@@ -25,7 +25,7 @@ namespace Negocio
             {
 
                 idUsuario = "0cdbc5a5-69d9-4ab8-8cb3-9932ce33f54a",
-                host = host,//pasa segun opcion menu
+                host = host,
                 nombre = nombre,
                 apellido = apellido,
                 dni = dni,
