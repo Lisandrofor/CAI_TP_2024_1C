@@ -34,7 +34,7 @@ namespace Negocio
                 email = email,
                 fechaNacimiento = fechaNacimiento,
                 nombreUsuario = nombreUsuario,
-                contraseña = "Temp1234"
+                contraseña = contraseña
             };
 
             try
