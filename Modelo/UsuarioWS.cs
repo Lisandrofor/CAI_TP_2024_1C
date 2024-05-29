@@ -11,7 +11,7 @@ namespace Modelo
 {
     public class UsuarioWS
     {
-        private string _nombre, _apellido, _usuario, _direccion, _telefono, _email, _nombreUsuario, _contraseña,_categoria;
+        private string _nombre, _apellido, _usuario, _direccion, _telefono, _email, _nombreUsuario, _contraseña, _categoria;
         private DateTime _fechaNacimiento;
         public string Id { get; set; }
         private int _host, _dni;
@@ -24,7 +24,7 @@ namespace Modelo
         public string telefono { get => _telefono; set => _telefono = value; }
         public string email { get => _email; set => _email = value; }
 
-        public string Categoria { get=>_categoria; set=>_categoria=value; }
+        public string Categoria { get => _categoria; set => _categoria = value; }
 
         public DateTime fechaNacimiento { get => _fechaNacimiento; set => _fechaNacimiento = value; }
 
@@ -33,27 +33,9 @@ namespace Modelo
         public string contraseña { get => _contraseña; set => _contraseña = value; }
 
 
-       
-        public UsuarioWS(int host, string idusuarioactual, string nombre, string apellido, int dni, string email, string direccion, string telefono, string nombreUsuario, string contraseña,DateTime fechaNac)
-        {
-            this.host = host;
-            this.idUsuario = idusuarioactual;
-            this.nombre = nombre;
-            this.apellido = apellido;
-            this.dni = dni;
-            this.email = email;
-            this.direccion = direccion;
-            this.telefono = telefono;
-            //this.Categoria = categoria;
-            this.nombreUsuario = nombreUsuario;
-            this.contraseña = contraseña;
-            this.fechaNacimiento = fechaNac;
 
-
-
-
-
-        }
+        public UsuarioWS()
+        {}
 
 
 
