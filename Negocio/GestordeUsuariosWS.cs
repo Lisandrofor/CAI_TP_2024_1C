@@ -11,13 +11,14 @@ namespace Negocio
     public class GestordeUsuariosWS
     {
         private UsuarioDatos UsuarioDatos = new UsuarioDatos();
+        
         private String idAdministrador = "70b37dc1-8fde-4840-be47-9ababd0ee7e5";
 
-        
+
 
 
         public bool AgregarUsuario(string nombre, int host, int dni, string direccion, string telefono, string apellido,
-       string email, string idUsuarioActual, string nombreUsuario,string contraseña, DateTime fechaNacimiento)
+       string email, string idUsuarioActual, string nombreUsuario, string contraseña, DateTime fechaNacimiento)
         {
 
             // Crear un objeto usuarioWS
