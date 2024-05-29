@@ -25,7 +25,7 @@ namespace Negocio
             var nuevoUsuarioWS = new UsuarioWS
             {
 
-                idUsuario = "0cdbc5a5-69d9-4ab8-8cb3-9932ce33f54a",
+                idUsuario = "3fa85f64-5717-4562-b3fc-2c963f66afa6",
                 host = host,
                 nombre = nombre,
                 apellido = apellido,
