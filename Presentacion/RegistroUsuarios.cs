@@ -54,17 +54,17 @@ namespace Presentacion
             gestorUsuario.ValidarApellido(apellido);
             gestorUsuario.ValidarUsername(nombre, apellido, nombreUsuario);
 
-            bool response=RegUsuario.AgregarUsuario(nombre, 1, dni, direccion, telefono,
-                        apellido, email,idUsuario,nombreUsuario,contraseña,fechaNac);
+            //bool response=RegUsuario.(1,"", dni, direccion, telefono,
+            //            apellido, email,idUsuario,nombreUsuario,contraseña,fechaNac);
 
-            if (!response)
-            {
-                Console.WriteLine("Hubo un error al agregar el usuario supervisor. Por favor intente nuevamente.");
-            }
-            else
-            {
-                Console.WriteLine("Usuario supervisor agregado con éxito.");
-            }
+            //if (!response)
+            //{
+            //    Console.WriteLine("Hubo un error al agregar el usuario supervisor. Por favor intente nuevamente.");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Usuario supervisor agregado con éxito.");
+            //}
 
 
 
