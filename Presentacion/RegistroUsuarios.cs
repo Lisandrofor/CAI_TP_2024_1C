@@ -47,6 +47,7 @@ namespace Presentacion
 
             Usuario nuevoUsuario = new Usuario(host,idusuarioactual,nombre, apellido, dni, email, direccion, telefono, categoria, nombreUsuario, contraseña,fechaNac);
             GestorDeUsuarios gestorUsuario = new GestorDeUsuarios();
+            
 
             gestorUsuario.ValidarNombre(nombre);
             gestorUsuario.ValidarApellido(apellido);
