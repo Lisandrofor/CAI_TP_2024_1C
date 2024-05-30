@@ -34,27 +34,8 @@ namespace Modelo
 
 
 
-        public UsuarioWS(string idusuarioactual, string nombre, string apellido, int dni, string email, string direccion, string telefono, string categoria, string nombreUsuario, string contraseña, DateTime FechaNac, int host)
-        {
-            this.host = host;
-            this.idUsuario = idusuarioactual;
-            this.nombre = nombre;
-            this.apellido = apellido;
-            this.dni = dni;
-            this.email = email;
-            this.direccion = direccion;
-            this.telefono = telefono;
-            this.Categoria = categoria;
-            this.nombreUsuario = nombreUsuario;
-            this.contraseña = contraseña;
-            this.fechaNacimiento = FechaNac;
-
-
-
-
-
-        }
-
+        public UsuarioWS()
+        { }
 
 
 
