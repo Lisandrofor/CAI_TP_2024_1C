@@ -45,7 +45,7 @@ namespace Presentacion
             
 
 
-            Usuario nuevoUsuario = new Usuario(host,idUsuario,nombre, apellido, dni, email, direccion, telefono, categoria, nombreUsuario, contraseña,fechaNac);
+            Usuario nuevoUsuario = new Usuario(host,idUsuario,nombre, apellido, dni, email, direccion, telefono, categoria, fechaNac, nombreUsuario, contraseña);
             GestorDeUsuarios gestorUsuario = new GestorDeUsuarios();
             GestordeUsuariosWS RegUsuario = new GestordeUsuariosWS();
             
