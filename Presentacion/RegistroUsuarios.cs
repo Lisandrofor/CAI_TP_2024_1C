@@ -54,8 +54,10 @@ namespace Presentacion
             gestorUsuario.ValidarApellido(apellido);
             gestorUsuario.ValidarUsername(nombre, apellido, nombreUsuario);
 
-            //bool response=RegUsuario.(1,"", dni, direccion, telefono,
-            //            apellido, email,idUsuario,nombreUsuario,contraseña,fechaNac);
+            RegUsuario.agregarCliente(nombre,apellido, dni, direccion, telefono,
+                        email,fechaNac,host);
+
+          
 
             //if (!response)
             //{
