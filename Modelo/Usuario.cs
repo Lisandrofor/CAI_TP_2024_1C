@@ -61,16 +61,17 @@ namespace Modelo
 
         }
 
-        public Usuario(string idUsuario, string nombre,int host, string apellido, int dni, string direccion,
-            string telefono, string email, DateTime fechaNacimiento, string nombreUsuario, string contraseña)
+        public Usuario(int host,string idUsuario, string nombre,string apellido, int dni, string direccion,
+            string telefono,string categoria, string email, DateTime fechaNacimiento, string nombreUsuario, string contraseña)
         {
-            this.idUsuario = idUsuario;
             this.host = host;
+            this.idUsuario = idUsuario;
             this.nombre = nombre;
             this.apellido = apellido;
             this.dni = dni;
             this.direccion = direccion;
             this.telefono = telefono;
+            this.Categoria = categoria;
             this.email = email;
             this.fechaNacimiento = fechaNacimiento;
             this.nombreUsuario = nombreUsuario;
