@@ -62,7 +62,7 @@ namespace Modelo
         }
 
         public Usuario(string idUsuario, string nombre,int host, string apellido, int dni, string direccion,
-            string telefono, string email, DateTime fechaNacimiento, string nombreUsuario, string contraseña = "Temp1234")
+            string telefono, string email, DateTime fechaNacimiento, string nombreUsuario, string contraseña)
         {
             this.idUsuario = idUsuario;
             this.host = host;
@@ -108,31 +108,31 @@ namespace Modelo
 
         override public String ToString()
         {
-            return this.Nombre + " - " + this.Apellido;
+            return this.nombre + " - " + this.apellido;
         }
 
 
 
-        public Usuario(int host,string idusuarioactual, string nombre, string apellido, int dni, string email, string direccion, string telefono, string categoria, string nombreUsuario, string contraseña, DateTime FechaNac)
-        {
-            this.Host = host;
-            this.IdUsuario = idusuarioactual;
-            this.Nombre = nombre;
-            this.Apellido = apellido;
-            this.DNI = dni;
-            this.Email = email;
-            this.Direccion = direccion;
-            this.Telefono = telefono;
-            this.Categoria = categoria;
-            this.NombreUsuario = nombreUsuario;
-            this.Contraseña = contraseña;
-            this.FechaNacimiento = FechaNac;
+        //public Usuario(int host,string idusuarioactual, string nombre, string apellido, int dni, string email, string direccion, string telefono, string categoria, string nombreUsuario, string contraseña, DateTime FechaNac)
+        //{
+        //    this.host = host;
+        //    this.idUsuario = idusuarioactual;
+        //    this.nombre = nombre;
+        //    this.apellido = apellido;
+        //    this.dni = dni;
+        //    this.email = email;
+        //    this.direccion = direccion;
+        //    this.telefono = telefono;
+        //    this.Categoria = categoria;
+        //    this.nombreUsuario = nombreUsuario;
+        //    this.contraseña = contraseña;
+        //    this.fechaNacimiento = FechaNac;
 
 
 
 
 
-        }
+        //}
 
 
 
