@@ -30,7 +30,7 @@ namespace Presentacion
         {
 
             int host=1;
-            string idusuarioactual="";
+            string idUsuario="";
             string nombre = tbNombre.Text;
             string apellido = tbApellido.Text;
             int dni = int.Parse(tbDNI.Text);
@@ -45,7 +45,7 @@ namespace Presentacion
             
 
 
-            Usuario nuevoUsuario = new Usuario(host,idusuarioactual,nombre, apellido, dni, email, direccion, telefono, categoria, nombreUsuario, contraseña,fechaNac);
+            Usuario nuevoUsuario = new Usuario(host,idUsuario,nombre, apellido, dni, email, direccion, telefono, categoria, nombreUsuario, contraseña,fechaNac);
             GestorDeUsuarios gestorUsuario = new GestorDeUsuarios();
             GestordeUsuariosWS RegUsuario = new GestordeUsuariosWS();
             
@@ -55,7 +55,7 @@ namespace Presentacion
             gestorUsuario.ValidarUsername(nombre, apellido, nombreUsuario);
 
             bool response=RegUsuario.AgregarUsuario(nombre, 1, dni, direccion, telefono,
-                        apellido, email,idusuarioactual,nombreUsuario,contraseña,fechaNac);
+                        apellido, email,idUsuario,nombreUsuario,contraseña,fechaNac);
 
             if (!response)
             {
