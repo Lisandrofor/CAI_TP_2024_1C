@@ -47,15 +47,26 @@ namespace Presentacion
 
             Usuario nuevoUsuario = new Usuario(host,idusuarioactual,nombre, apellido, dni, email, direccion, telefono, categoria, nombreUsuario, contraseña,fechaNac);
             GestorDeUsuarios gestorUsuario = new GestorDeUsuarios();
+            GestordeUsuariosWS RegUsuario = new GestordeUsuariosWS();
             
 
             gestorUsuario.ValidarNombre(nombre);
             gestorUsuario.ValidarApellido(apellido);
             gestorUsuario.ValidarUsername(nombre, apellido, nombreUsuario);
 
-            Lista.AgregarUsuario(nuevoUsuario);
-            
-            
+            bool response=RegUsuario.AgregarUsuario(nombre, 1, dni, direccion, telefono,
+                        apellido, email,idusuarioactual,nombreUsuario,contraseña,fechaNac);
+
+            if (!response)
+            {
+                Console.WriteLine("Hubo un error al agregar el usuario supervisor. Por favor intente nuevamente.");
+            }
+            else
+            {
+                Console.WriteLine("Usuario supervisor agregado con éxito.");
+            }
+
+
 
             BorrarCampos();
             MessageBox.Show($"Usuario Agregado Exitosamente");
