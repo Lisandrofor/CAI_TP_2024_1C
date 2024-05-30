@@ -13,26 +13,32 @@ namespace Modelo
     public class Usuario
     {
         // Atributos privados
-        public Guid Id { get; set; }
+        public Guid id { get; set; }
 
-        public string IdUsuario { get; set; }
+        public string idUsuario { get; set; }
 
-        public int Host { get; set; }
+        public int host { get; set; }
 
-        public string Nombre { get; set; }
+        public string nombre { get; set; }
 
-        public string Apellido { get; set; }
+        public string apellido { get; set; }
         public string Categoria { get; set; }
 
-        public string Direccion { get; set; }
-        public string Telefono { get; set; }
-        public string Email { get; set; }
-        public DateTime? FechaNacimiento { get; set; }  // ? permite null
-        public DateTime? FechaBaja { get; set; }  // ? permite null
-        public string NombreUsuario { get; set; }
-        public int DNI { get; set; }
-        public string Contraseña { get; set; }
+        public string direccion { get; set; }
+        public string telefono { get; set; }
+        public string email { get; set; }
+        public DateTime? fechaNacimiento { get; set; }  // ? permite null
+        public DateTime? fechaBaja { get; set; }  // ? permite null
+        public DateTime? fechaAlta { get; set; }
+        public string nombreUsuario { get; set; }
+        public int dni { get; set; }
+        public string contraseña { get; set; }
         private string nuevoPass;
+
+
+
+        public Usuario()
+        { }
 
 
         // Constructor
@@ -40,31 +46,39 @@ namespace Modelo
         public Usuario(UsuarioWS usuarioWS)
         {
 
-            this.Host = usuarioWS.host;
-            this.IdUsuario = usuarioWS.Id;
-            this.Nombre = usuarioWS.nombre;
-            this.Apellido = usuarioWS.apellido;
-            this.DNI = usuarioWS.dni;
-            this.Direccion = usuarioWS.direccion;
-            this.Telefono = usuarioWS.telefono;
-            this.Email = usuarioWS.email;
-            this.FechaNacimiento = usuarioWS.fechaNacimiento;
-            this.NombreUsuario = usuarioWS.nombreUsuario;
-            this.Contraseña = usuarioWS.contraseña;
+            this.host = usuarioWS.host;
+            this.idUsuario = usuarioWS.id;
+            this.nombre = usuarioWS.nombre;
+            this.apellido = usuarioWS.apellido;
+            this.dni = usuarioWS.dni;
+            this.direccion = usuarioWS.direccion;
+            this.telefono = usuarioWS.telefono;
+            this.email = usuarioWS.email;
+            this.fechaNacimiento = usuarioWS.fechaNacimiento;
+            this.nombreUsuario = usuarioWS.nombreUsuario;
+            this.contraseña = usuarioWS.contraseña;
 
 
         }
 
+        public Usuario(string idUsuario, string nombre,int host, string apellido, int dni, string direccion,
+            string telefono, string email, DateTime fechaNacimiento, string nombreUsuario, string contraseña = "Temp1234")
+        {
+            this.idUsuario = idUsuario;
+            this.host = host;
+            this.nombre = nombre;
+            this.apellido = apellido;
+            this.dni = dni;
+            this.direccion = direccion;
+            this.telefono = telefono;
+            this.email = email;
+            this.fechaNacimiento = fechaNacimiento;
+            this.nombreUsuario = nombreUsuario;
+            this.contraseña = contraseña;
+
+        }
 
 
-        //public Usuario(int host, string idusuarioactual, string nombre, string apellido, int dni, string email, string direccion, string telefono, string categoria, string nombreUsuario, string contraseña, DateTime fechaNacimiento)
-        //{
-        //    this.Nombre = nombre;
-        //    this.Apellido = apellido;
-        //    this.NombreUsuario = nombreUsuario;
-        //    this.Contraseña = GenerarPasswordTemporal();
-
-        //}
 
 
 
