@@ -30,7 +30,7 @@ namespace Modelo
             public int dni { get; set; }
             public string contraseña;
 
-            public UsuarioWS(string idUsuario, string nombre, string apellido, int dni, string direccion, string telefono, string email, DateTime fechaNacimiento,int host)
+            public UsuarioWS(string idUsuario, int host, string nombre, string apellido, int dni, string direccion, string telefono, string email, DateTime fechaNacimiento,string nombreUsuario,string contraseña)
             {
                 
                 this.idUsuario = idUsuario;
@@ -42,6 +42,9 @@ namespace Modelo
                 this.email = email;
                 this.fechaNacimiento = fechaNacimiento;
                 this.host = host;
+                this.nombreUsuario = nombreUsuario;
+                this.contraseña = contraseña;
+
              }
 
             public override string ToString()
