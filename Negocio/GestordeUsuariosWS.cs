@@ -12,7 +12,7 @@ namespace Negocio
     {
         private UsuarioDatos UsuarioDatos = new UsuarioDatos();
 
-        private String idUsuario = "3fa85f64-5717-4562-b3fc-2c963f66afa6";
+        private String idAdministrador = "3fa85f64-5717-4562-b3fc-2c963f66afa6";
 
 
         //public bool AgregarUsuario(string idUsuario,string nombre, int host, int dni, string direccion, string telefono, string apellido,
@@ -51,7 +51,7 @@ namespace Negocio
                        
         public void AgregarUsuario(string host,string nombre, string apellido, int dni, string direccion, string telefono, string email, DateTime fechaNacimiento, string nombreUsuario,string contraseña)
         {
-            UsuarioWS RegistroWS = new UsuarioWS(idUsuario,host, nombre, apellido,dni, direccion, telefono, email,fechaNacimiento, nombreUsuario, contraseña);
+            UsuarioWS RegistroWS = new UsuarioWS(idAdministrador,host, nombre, apellido,dni, direccion, telefono, email,fechaNacimiento, nombreUsuario, contraseña);
             UsuarioDatos.AgregarUsuario(RegistroWS);
 
         }
