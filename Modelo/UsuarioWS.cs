@@ -18,7 +18,7 @@ namespace Modelo
 
             public string id { get; set; }
             public string idUsuario { get; set; }
-            public int host { get; set; }
+            public string host { get; set; }
             public string nombre;
             public string apellido;
             public string direccion { get; set; }
@@ -30,7 +30,7 @@ namespace Modelo
             public int dni { get; set; }
             public string contraseña;
 
-            public UsuarioWS(string idUsuario, int host, string nombre, string apellido, int dni, string direccion, string telefono, string email, DateTime fechaNacimiento,string nombreUsuario,string contraseña)
+            public UsuarioWS(string idUsuario, string host, string nombre, string apellido, int dni, string direccion, string telefono, string email, DateTime fechaNacimiento,string nombreUsuario,string contraseña)
             {
                 
                 this.idUsuario = idUsuario;

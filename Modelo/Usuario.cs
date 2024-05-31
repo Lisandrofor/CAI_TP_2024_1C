@@ -17,7 +17,7 @@ namespace Modelo
 
         public string idUsuario { get; set; }
 
-        public int host { get; set; }
+        public string host { get; set; }
 
         public string nombre { get; set; }
 
@@ -61,7 +61,7 @@ namespace Modelo
 
         }
 
-        public Usuario(int host,string idUsuario, string nombre,string apellido, int dni, string direccion,
+        public Usuario(string host,string idUsuario, string nombre,string apellido, int dni, string direccion,
             string telefono,string categoria, string email, DateTime fechaNacimiento, string nombreUsuario, string contraseña)
         {
             this.host = host;
