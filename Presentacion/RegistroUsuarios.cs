@@ -54,7 +54,7 @@ namespace Presentacion
             gestorUsuario.ValidarApellido(apellido);
             gestorUsuario.ValidarUsername(nombre, apellido, nombreUsuario);
 
-            RegUsuario.agregarCliente(nombre,apellido, dni, direccion, telefono,
+            RegUsuario.AgregarUsuario(nombre,apellido, dni, direccion, telefono,
                         email,fechaNac,host);
 
           
