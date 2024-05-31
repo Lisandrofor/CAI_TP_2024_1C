@@ -29,7 +29,7 @@ namespace Presentacion
         private void btnRegistrarUsuario_Click(object sender, EventArgs e)
         {
 
-            int host=1;
+            string host="test";
             string idUsuario="";
             string nombre = tbNombre.Text;
             string apellido = tbApellido.Text;
