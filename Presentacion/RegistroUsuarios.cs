@@ -29,8 +29,8 @@ namespace Presentacion
         private void btnRegistrarUsuario_Click(object sender, EventArgs e)
         {
 
-            string host;
-            string idUsuario;
+            
+            
             string nombre = tbNombre.Text;
             string apellido = tbApellido.Text;
             int dni = int.Parse(tbDNI.Text);
