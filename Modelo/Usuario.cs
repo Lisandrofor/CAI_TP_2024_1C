@@ -47,7 +47,7 @@ namespace Modelo
         {
 
             this.host = usuarioWS.host;
-            this.idUsuarioActual = usuarioWS.id;
+            this.idUsuarioActual = usuarioWS.idUsuario;
             this.nombre = usuarioWS.nombre;
             this.apellido = usuarioWS.apellido;
             this.dni = usuarioWS.dni;
