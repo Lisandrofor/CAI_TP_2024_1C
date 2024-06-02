@@ -29,8 +29,8 @@ namespace Presentacion
         private void btnRegistrarUsuario_Click(object sender, EventArgs e)
         {
 
-            string host="test";
-            string idUsuario="";
+            string host;
+            string idUsuario;
             string nombre = tbNombre.Text;
             string apellido = tbApellido.Text;
             int dni = int.Parse(tbDNI.Text);
@@ -45,7 +45,7 @@ namespace Presentacion
             
 
 
-            Usuario nuevoUsuario = new Usuario(host,idUsuario,nombre, apellido, dni, email, direccion, telefono, categoria, fechaNac, nombreUsuario, contraseña);
+            Usuario nuevoUsuario = new Usuario(nombre, apellido, dni, email, direccion, telefono, categoria, fechaNac, nombreUsuario, contraseña);
             GestorDeUsuarios gestorUsuario = new GestorDeUsuarios();
             GestordeUsuariosWS RegUsuario = new GestordeUsuariosWS();
             
@@ -54,7 +54,7 @@ namespace Presentacion
             gestorUsuario.ValidarApellido(apellido);
             gestorUsuario.ValidarUsername(nombre, apellido, nombreUsuario);
 
-            RegUsuario.AgregarUsuario(host,idUsuario,nombre,apellido, dni, direccion, telefono,
+            RegUsuario.AgregarUsuario(nombre,apellido, dni, direccion, telefono,
                         email,fechaNac, nombreUsuario, contraseña);
 
           

@@ -49,9 +49,10 @@ namespace Negocio
         //}
 
                        
-        public void AgregarUsuario(string host,string idUsuario,string nombre, string apellido, int dni, string direccion, string telefono, string email, DateTime fechaNacimiento, string nombreUsuario,string contraseña)
+        public void AgregarUsuario(string nombre, string apellido, int dni, string direccion, string telefono, string email, DateTime fechaNacimiento, string nombreUsuario,string contraseña)
         {
-            UsuarioWS RegistroWS = new UsuarioWS(idAdministrador,host, nombre, apellido,dni, direccion, telefono, email,fechaNacimiento, nombreUsuario, contraseña);
+
+            UsuarioWS RegistroWS = new UsuarioWS(idAdministrador,"test", nombre, apellido, dni, direccion, telefono, email, fechaNacimiento, nombreUsuario, contraseña);
             UsuarioDatos.AgregarUsuario(RegistroWS);
 
         }
