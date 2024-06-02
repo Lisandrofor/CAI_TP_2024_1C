@@ -15,7 +15,7 @@ namespace Modelo
         // Atributos privados
         public Guid id { get; set; }
 
-        public string idUsuario { get; set; }
+        public string idUsuarioActual { get; set; }
 
         public string host { get; set; }
 
@@ -47,7 +47,7 @@ namespace Modelo
         {
 
             this.host = usuarioWS.host;
-            this.idUsuario = usuarioWS.id;
+            this.idUsuarioActual = usuarioWS.id;
             this.nombre = usuarioWS.nombre;
             this.apellido = usuarioWS.apellido;
             this.dni = usuarioWS.dni;
