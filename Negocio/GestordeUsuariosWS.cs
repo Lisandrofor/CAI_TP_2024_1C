@@ -12,7 +12,7 @@ namespace Negocio
     {
         private UsuarioDatos UsuarioDatos = new UsuarioDatos();
 
-        private String idAdministrador = "3fa85f64-5717-4562-b3fc-2c96f66afa6";
+        private String idAdministrador = "70b37dc1-8fde-4840-be47-9ababd0ee7e5";
 
 
         //public bool AgregarUsuario(string idUsuario,string nombre, int host, int dni, string direccion, string telefono, string apellido,
