@@ -30,10 +30,10 @@ namespace Modelo
             public int dni { get; set; }
             public string contraseña;
 
-            public UsuarioWS(string idAdministrador, string host, string nombre, string apellido, int dni, string direccion, string telefono, string email, DateTime fechaNacimiento,string nombreUsuario,string contraseña)
+            public UsuarioWS(string idUsuario, string host, string nombre, string apellido, int dni, string direccion, string telefono, string email, DateTime fechaNacimiento,string nombreUsuario,string contraseña)
             {
                 
-                this.idUsuario = idAdministrador;
+                this.idUsuario = idUsuario;
                 this.host = host;
                 this.nombre = nombre;
                 this.apellido = apellido;
