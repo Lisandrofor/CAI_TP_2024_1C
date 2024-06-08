@@ -9,48 +9,42 @@ using System.Threading.Tasks;
 
 namespace Modelo
 {
+    //WS se usa para deserilizar
+    //tiene todos los atributos de la response body del GET 
+
     public class UsuarioWS
     {
+        private string _nombre, _apellido, _usuario, _direccion, _telefono, _email, _nombreUsuario, _contraseña;
+        private DateTime _fechaNacimiento;
+
+        private string _host;
+        private int _dni;
+        public string idUsuario { get; set; }
+        public string host { get => _host; set => _host = value; }
+        public string nombre { get => _nombre; set => _nombre = value; }
+        public string apellido { get => _apellido; set => _apellido = value; }
+        public int dni { get => _dni; set => _dni = value; }
+        public string direccion { get => _direccion; set => _direccion = value; }
+        public string telefono { get => _telefono; set => _telefono = value; }
+        public string email { get => _usuario; set => _usuario = value; }
+
+        public DateTime fechaNacimiento { get => _fechaNacimiento; set => _fechaNacimiento = value; }
+
+        public string nombreUsuario { get => _nombreUsuario; set => _nombreUsuario = value; }
+
+        public string contraseña { get => _contraseña; set => _contraseña = value; }
 
 
-        //WS se usa para deserilizar
-        //tiene todos los atributos de la response body del GET 
+        public UsuarioWS()
+        {
 
-            public string id { get; set; }
-            public string idUsuario { get; set; }
-            public string host { get; set; }
-            public string nombre;
-            public string apellido;
-            public string direccion { get; set; }
-            public string telefono { get; set; }
-            public string email { get; set; }
-            public DateTime? fechaNacimiento { get; set; }  // ? permite null
-            public DateTime? FechaBaja { get; set; }  // ? permite null
-            public string nombreUsuario;
-            public int dni { get; set; }
-            public string contraseña;
+        }
 
-            public UsuarioWS(string idUsuario, string host, string nombre, string apellido, int dni, string direccion, string telefono, string email, DateTime fechaNacimiento,string nombreUsuario,string contraseña)
-            {
-                
-                this.idUsuario = idUsuario;
-                this.host = host;
-                this.nombre = nombre;
-                this.apellido = apellido;
-                this.dni = dni;
-                this.direccion = direccion;
-                this.telefono = telefono;
-                this.email = email;
-                this.fechaNacimiento = fechaNacimiento;
-                
-                this.nombreUsuario = nombreUsuario;
-                this.contraseña = contraseña;
+        public override string ToString()
+        {
+            return string.Format("{nombre} - {apellido}.");
+        }
+    }
 
-             }
 
-            public override string ToString()
-            {
-                return idUsuario + " " + nombre + " " + apellido;
-            }
-     }
- }
+}
