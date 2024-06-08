@@ -26,7 +26,7 @@ namespace Modelo
         public int dni { get => _dni; set => _dni = value; }
         public string direccion { get => _direccion; set => _direccion = value; }
         public string telefono { get => _telefono; set => _telefono = value; }
-        public string email { get => _usuario; set => _usuario = value; }
+        public string email { get => _email; set => _email = value; }
 
         public DateTime fechaNacimiento { get => _fechaNacimiento; set => _fechaNacimiento = value; }
 
