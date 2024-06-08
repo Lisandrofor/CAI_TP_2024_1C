@@ -31,7 +31,7 @@ namespace Presentacion
 
 
             string idUsuarioActual = "0cdbc5a5-69d9-4ab8-8cb3-9932ce33f54a";
-            string host="test"
+            string host = "test";
             string nombre = tbNombre.Text;
             string apellido = tbApellido.Text;
             int dni = int.Parse(tbDNI.Text);
