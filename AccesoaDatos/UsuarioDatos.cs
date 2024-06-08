@@ -39,23 +39,23 @@ namespace accesoadatos
 
 
     //get para traer usuarios
-    public static List<UsuarioWS> listarusuarios()
-    {
+    //public static List<UsuarioWS> listarusuarios()
+    //{
 
-        HttpResponseMessage response = WebHelper.Get("usuario/traerusuariosactivos?id=" + usuarioadmin);
+    //    HttpResponseMessage response = WebHelper.Get("usuario/traerusuariosactivos?id=" + usuarioadmin);
 
-        if (!response.IsSuccessStatusCode)
-        {
-            throw new Exception("verifique los datos ingresados");
-        }
-        else
-        {
-            var contentstream = response.Content.ReadAsStringAsync().Result;
-            List<UsuarioWS> listadousuarios = JsonConvert.DeserializeObject<List<UsuarioWS>>(contentstream);
-            return listadousuarios;
+    //    if (!response.IsSuccessStatusCode)
+    //    {
+    //        throw new Exception("verifique los datos ingresados");
+    //    }
+    //    else
+    //    {
+    //        var contentstream = response.Content.ReadAsStringAsync().Result;
+    //        List<UsuarioWS> listadousuarios = JsonConvert.DeserializeObject<List<UsuarioWS>>(contentstream);
+    //        return listadousuarios;
 
-        }
-    }
+    //    }
+    //}
 
 
     //patch cambiar contraseña
