@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Modelo;
+using Negocio;
 
 
 namespace Presentacion
@@ -28,8 +29,8 @@ namespace Presentacion
         private void btnRegistrarUsuario_Click(object sender, EventArgs e)
         {
 
-            int host = 1;
-            string idusuarioactual = "";
+            string host="test";
+            string idUsuario="";
             string nombre = tbNombre.Text;
             string apellido = tbApellido.Text;
             int dni = int.Parse(tbDNI.Text);
@@ -39,12 +40,35 @@ namespace Presentacion
             string categoria = comboBox1.Text;
             string nombreUsuario = tbUsuario.Text;
             string contraseña = tbContrasenia.Text;
+            DateTime fechaNac = DateTime.Parse(TbFechaNac.Text);
 
-
-            RegistroUsuario nuevoUsuario = new RegistroUsuario(host,idusuarioactual,nombre, apellido, dni, email, direccion, telefono, categoria, nombreUsuario, contraseña);
-
-            Lista.AgregarUsuario(nuevoUsuario);
             
+
+
+            Usuario nuevoUsuario = new Usuario(host,idUsuario,nombre, apellido, dni, email, direccion, telefono, categoria, fechaNac, nombreUsuario, contraseña);
+            GestorDeUsuarios gestorUsuario = new GestorDeUsuarios();
+            GestordeUsuariosWS RegUsuario = new GestordeUsuariosWS();
+            
+
+            gestorUsuario.ValidarNombre(nombre);
+            gestorUsuario.ValidarApellido(apellido);
+            gestorUsuario.ValidarUsername(nombre, apellido, nombreUsuario);
+
+            RegUsuario.AgregarUsuario(host,nombre,apellido, dni, direccion, telefono,
+                        email,fechaNac, nombreUsuario, contraseña);
+
+          
+
+            //if (!response)
+            //{
+            //    Console.WriteLine("Hubo un error al agregar el usuario supervisor. Por favor intente nuevamente.");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Usuario supervisor agregado con éxito.");
+            //}
+
+
 
             BorrarCampos();
             MessageBox.Show($"Usuario Agregado Exitosamente");
@@ -73,6 +97,7 @@ namespace Presentacion
             tbTelefono.Clear();
             tbUsuario.Clear();
             tbContrasenia.Clear();
+            TbFechaNac.Clear();
 
 
         }
