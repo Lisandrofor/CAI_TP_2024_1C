@@ -30,8 +30,8 @@ namespace Presentacion
         {
 
 
-            string idUsuarioActual = "0cdbc5a5-69d9-4ab8-8cb3-9932ce33f54a";
-            string host = "test";
+            
+            
             string nombre = tbNombre.Text;
             string apellido = tbApellido.Text;
             int dni = int.Parse(tbDNI.Text);
@@ -55,7 +55,7 @@ namespace Presentacion
             gestorUsuario.ValidarApellido(apellido);
             gestorUsuario.ValidarUsername(nombre, apellido, nombreUsuario);
 
-            RegUsuario.AgregarUsuario(idUsuarioActual,host,nombre,apellido, dni, direccion, telefono,
+            RegUsuario.AgregarUsuario(nombre,apellido, dni, direccion, telefono,
                         email,fechaNac, nombreUsuario, contraseña);
 
           
