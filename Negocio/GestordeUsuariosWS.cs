@@ -13,7 +13,7 @@ namespace Negocio
 
 
 
-        public bool AgregarUsuario(string idUsuarioActual,string host, string nombre, string apellido, int dni, string direccion, string telefono,
+        public bool AgregarUsuario( string nombre, string apellido, int dni, string direccion, string telefono,
         string email, DateTime fechaNac, string nombreUsuario, string contraseña)
         {
 
@@ -21,7 +21,7 @@ namespace Negocio
             var nuevoUsuarioWS = new UsuarioWS
             {
 
-                idUsuario = idUsuarioActual,
+                idUsuario = "0cdbc5a5-69d9-4ab8-8cb3-9932ce33f54a",
                 nombre = nombre,
                 apellido = apellido,
                 dni = dni,
@@ -31,7 +31,7 @@ namespace Negocio
                 nombreUsuario = nombreUsuario,
                 contraseña = contraseña,
                 fechaNacimiento = fechaNac,
-                host = host //pasa segun opcion menu
+                host = "test" //pasa segun opcion menu
             };
 
             try
