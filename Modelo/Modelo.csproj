@@ -48,7 +48,7 @@
   </ItemGroup>
   <ItemGroup>
 
->>>>>>> Master
+
     <Compile Include="Usuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UsuarioWS.cs" />
